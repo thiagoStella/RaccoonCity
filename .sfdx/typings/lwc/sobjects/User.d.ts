@@ -166,6 +166,14 @@ declare module "@salesforce/schema/User.EmailEncodingKey" {
   const EmailEncodingKey:string;
   export default EmailEncodingKey;
 }
+declare module "@salesforce/schema/User.DefaultCurrencyIsoCode" {
+  const DefaultCurrencyIsoCode:string;
+  export default DefaultCurrencyIsoCode;
+}
+declare module "@salesforce/schema/User.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/User.Profile" {
   const Profile:any;
   export default Profile;
@@ -261,10 +269,6 @@ declare module "@salesforce/schema/User.UserPermissionsOfflineUser" {
 declare module "@salesforce/schema/User.UserPermissionsCallCenterAutoLogin" {
   const UserPermissionsCallCenterAutoLogin:boolean;
   export default UserPermissionsCallCenterAutoLogin;
-}
-declare module "@salesforce/schema/User.UserPermissionsMobileUser" {
-  const UserPermissionsMobileUser:boolean;
-  export default UserPermissionsMobileUser;
 }
 declare module "@salesforce/schema/User.UserPermissionsSFContentUser" {
   const UserPermissionsSFContentUser:boolean;
@@ -490,17 +494,9 @@ declare module "@salesforce/schema/User.UserPreferencesShowCountryToGuestUsers" 
   const UserPreferencesShowCountryToGuestUsers:boolean;
   export default UserPreferencesShowCountryToGuestUsers;
 }
-declare module "@salesforce/schema/User.UserPreferencesDisableFeedbackEmail" {
-  const UserPreferencesDisableFeedbackEmail:boolean;
-  export default UserPreferencesDisableFeedbackEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesDisableWorkEmail" {
-  const UserPreferencesDisableWorkEmail:boolean;
-  export default UserPreferencesDisableWorkEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesPipelineViewHideHelpPopover" {
-  const UserPreferencesPipelineViewHideHelpPopover:boolean;
-  export default UserPreferencesPipelineViewHideHelpPopover;
+declare module "@salesforce/schema/User.UserPreferencesShowForecastingChangeSignals" {
+  const UserPreferencesShowForecastingChangeSignals:boolean;
+  export default UserPreferencesShowForecastingChangeSignals;
 }
 declare module "@salesforce/schema/User.UserPreferencesHideS1BrowserUI" {
   const UserPreferencesHideS1BrowserUI:boolean;
@@ -626,6 +622,30 @@ declare module "@salesforce/schema/User.UserPreferencesNewLightningReportRunPage
   const UserPreferencesNewLightningReportRunPageEnabled:boolean;
   export default UserPreferencesNewLightningReportRunPageEnabled;
 }
+declare module "@salesforce/schema/User.UserPreferencesReverseOpenActivitiesView" {
+  const UserPreferencesReverseOpenActivitiesView:boolean;
+  export default UserPreferencesReverseOpenActivitiesView;
+}
+declare module "@salesforce/schema/User.UserPreferencesShowTerritoryTimeZoneShifts" {
+  const UserPreferencesShowTerritoryTimeZoneShifts:boolean;
+  export default UserPreferencesShowTerritoryTimeZoneShifts;
+}
+declare module "@salesforce/schema/User.UserPreferencesHasSentWarningEmail" {
+  const UserPreferencesHasSentWarningEmail:boolean;
+  export default UserPreferencesHasSentWarningEmail;
+}
+declare module "@salesforce/schema/User.UserPreferencesHasSentWarningEmail238" {
+  const UserPreferencesHasSentWarningEmail238:boolean;
+  export default UserPreferencesHasSentWarningEmail238;
+}
+declare module "@salesforce/schema/User.UserPreferencesHasSentWarningEmail240" {
+  const UserPreferencesHasSentWarningEmail240:boolean;
+  export default UserPreferencesHasSentWarningEmail240;
+}
+declare module "@salesforce/schema/User.UserPreferencesNativeEmailClient" {
+  const UserPreferencesNativeEmailClient:boolean;
+  export default UserPreferencesNativeEmailClient;
+}
 declare module "@salesforce/schema/User.Contact" {
   const Contact:any;
   export default Contact;
@@ -725,4 +745,8 @@ declare module "@salesforce/schema/User.Individual" {
 declare module "@salesforce/schema/User.IndividualId" {
   const IndividualId:any;
   export default IndividualId;
+}
+declare module "@salesforce/schema/User.Dashboard_Pal__Default_Dashboard__c" {
+  const Dashboard_Pal__Default_Dashboard__c:string;
+  export default Dashboard_Pal__Default_Dashboard__c;
 }

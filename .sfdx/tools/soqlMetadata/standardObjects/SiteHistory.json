@@ -1,0 +1,903 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do site personalizado",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do site",
+      "name": "SiteId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Site"
+      ],
+      "relationshipName": "Site",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Campo alterado",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar feeds",
+          "validFor": null,
+          "value": "siteEnableFeeds"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar página inicial padrão",
+          "validFor": null,
+          "value": "siteAllowHomePage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar páginas de busca padrão",
+          "validFor": null,
+          "value": "siteAllowStandardLookups"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar páginas de pesquisa padrão",
+          "validFor": null,
+          "value": "siteAllowStandardSearch"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar páginas de respostas padrão",
+          "validFor": null,
+          "value": "siteAllowStandardAnswersPages"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar páginas padrão do Ideas",
+          "validFor": null,
+          "value": "siteAllowStandardIdeasPages"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativo",
+          "validFor": null,
+          "value": "siteActive"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Classe de URL Rewriter",
+          "validFor": null,
+          "value": "UrlRewriterClass"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Código de rastreamento analítico",
+          "validFor": null,
+          "value": "AnalyticsTrackingCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contato do site",
+          "validFor": null,
+          "value": "Admin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criado",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desativar site",
+          "validFor": null,
+          "value": "siteBTDisabled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição do site",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Domínio padrão do site",
+          "validFor": null,
+          "value": "DefaultDomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Domínio padrão do site",
+          "validFor": null,
+          "value": "siteSetPrimaryDomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço da web padrão",
+          "validFor": null,
+          "value": "UrlPathPrefix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço da web personalizado",
+          "validFor": null,
+          "value": "SiteDeleteDomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço da web personalizado",
+          "validFor": null,
+          "value": "siteNewDomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço da web personalizado",
+          "validFor": null,
+          "value": "TopLevelDomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evento do feed",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exigir conexões não seguras (HTTP)",
+          "validFor": null,
+          "value": "siteRequireInsecurePortalAccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exigir conexões seguras (HTTPS)",
+          "validFor": null,
+          "value": "siteRequireHttps"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Home page ativa do site",
+          "validFor": null,
+          "value": "IndexPage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Home page inativa do site",
+          "validFor": null,
+          "value": "siteOverrideInactive"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ícone de site favorito",
+          "validFor": null,
+          "value": "FavoriteIcon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Idioma mestre do site",
+          "validFor": null,
+          "value": "Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indivíduo mesclado",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "mapeamentos de redirecionamento. Criado um novo mapeamento",
+          "validFor": null,
+          "value": "siteNewRedirect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "mapeamentos de redirecionamento. Excluído o mapeamento",
+          "validFor": null,
+          "value": "siteDeleteRedirect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "mapeamentos de redirecionamento. O novo valor do mapeamento é",
+          "validFor": null,
+          "value": "siteChangeRedirect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de comunidade do Lightning",
+          "validFor": null,
+          "value": "TemplateInfo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de nova senha",
+          "validFor": null,
+          "value": "NewPassTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de novo usuário",
+          "validFor": null,
+          "value": "NewUserTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de site",
+          "validFor": null,
+          "value": "siteOverrideTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nível de proteção clickjack",
+          "validFor": null,
+          "value": "ClickjackProtectionLevel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome do site",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O limite mensal de visualização de páginas foi excedido para a organização",
+          "validFor": null,
+          "value": "sitePageLimitExceeded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opções",
+          "validFor": null,
+          "value": "Options"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página Autorização necessária (401)",
+          "validFor": null,
+          "value": "siteOverride401"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página de alteração de senha",
+          "validFor": null,
+          "value": "siteOverrideChangePassword"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página de erro genérico",
+          "validFor": null,
+          "value": "siteOverride500"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página de esquecimento de senha",
+          "validFor": null,
+          "value": "siteOverrideForgotPassword"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página de registro automático",
+          "validFor": null,
+          "value": "siteOverrideSelfReg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página Limite excedido (509)",
+          "validFor": null,
+          "value": "siteOverride509"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página Manutenção(500/503)",
+          "validFor": null,
+          "value": "siteOverride503"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página Meu perfil",
+          "validFor": null,
+          "value": "siteOverrideMyProfile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página Página não encontrada(404)",
+          "validFor": null,
+          "value": "siteOverride404"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Permitir acesso a páginas padrão do Salesforce",
+          "validFor": null,
+          "value": "SiteAllowStandardPortalPages"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portal",
+          "validFor": null,
+          "value": "Portal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prefixo do subdomínio do site",
+          "validFor": null,
+          "value": "Subdomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário (Aceito)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário (Atribuição)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro bloqueado.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro desbloqueado.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rótulo do site",
+          "validFor": null,
+          "value": "MasterLabel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serviço não disponível",
+          "validFor": null,
+          "value": "ServerIsDown"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site Robots.txt",
+          "validFor": null,
+          "value": "siteOverrideRobotsTxt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status do site",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de site",
+          "validFor": null,
+          "value": "SiteType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unique ID",
+          "validFor": null,
+          "value": "Guid"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário",
+          "validFor": null,
+          "value": "GuestRecordDefaultOwner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário convidado",
+          "validFor": null,
+          "value": "GuestUser"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de dados",
+      "name": "DataType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AnyType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AutoNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Base64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "BitVector"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Currency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DataCategoryGroupReference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Division"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Double"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DynamicEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedBase64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EntityId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EnumOrId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ExternalId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "File"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlMultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlStringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "InetAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Json"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Namespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Percent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Raw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SfdcEncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SimpleNamespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "StringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Switchable_PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TimeOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Url"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "YearQuarter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor antigo",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Novo valor",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Histórico do site",
+  "childRelationships": [],
+  "custom": false,
+  "name": "SiteHistory",
+  "queryable": true
+}

@@ -17,9 +17,10 @@ global class Task {
     global String Status;
     global String Priority;
     global Boolean IsHighPriority;
-    global User Owner;
+    global SObject Owner;
     global Id OwnerId;
     global String Description;
+    global String CurrencyIsoCode;
     global Boolean IsDeleted;
     global Account Account;
     global Id AccountId;
@@ -53,6 +54,7 @@ global class Task {
     global String RecurrenceRegeneratedType;
     global String TaskSubtype;
     global Datetime CompletedDateTime;
+    global List<ActivityFieldHistory> ActivityFieldHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
     global List<CombinedAttachment> CombinedAttachments;
@@ -61,12 +63,18 @@ global class Task {
     global List<Task> RecurringTasks;
     global List<TaskFeed> Feeds;
     global List<TopicAssignment> TopicAssignments;
+    global List<VoiceCall> VoiceCallActivities;
+    global List<AIInsightValue> SobjectLookupValue;
+    global List<AIRecordInsight> Target;
+    global List<ContentDocumentLinkChangeEvent> LinkedEntity;
     global List<ContentVersion> FirstPublishLocation;
     global List<EmailMessage> Activity;
     global List<EmailStatus> Task;
     global List<FeedComment> Parent;
+    global List<FlowExecutionErrorEvent> ContextRecord;
     global List<FlowRecordRelation> RelatedRecord;
     global List<TaskChangeEvent> RecurrenceActivity;
+    global List<VoiceCallChangeEvent> Activity;
 
     global Task () 
     {

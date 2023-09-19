@@ -1,0 +1,1304 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da taxa de conversão datada",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Código da moeda",
+      "name": "IsoCode",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AED - Dirham EAU (Emirados Árabes Unidos)",
+          "validFor": null,
+          "value": "AED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AFN - Afghani Afegão (Nova)",
+          "validFor": null,
+          "value": "AFN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ALL - Lek Albanês",
+          "validFor": null,
+          "value": "ALL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AMD - Dram Armênio",
+          "validFor": null,
+          "value": "AMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ANG - Florim das Antilhas Neerlandesas",
+          "validFor": null,
+          "value": "ANG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AOA - Kwanza Angolano",
+          "validFor": null,
+          "value": "AOA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ARS - Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AUD - Dólar Australiano",
+          "validFor": null,
+          "value": "AUD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AWG - Florim de Aruba",
+          "validFor": null,
+          "value": "AWG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AZN - Manat azerbaijano",
+          "validFor": null,
+          "value": "AZN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BAM - Marcos Conversíveis",
+          "validFor": null,
+          "value": "BAM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BBD - Dólar de Barbados",
+          "validFor": null,
+          "value": "BBD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BDT - Taka Bangladechiano",
+          "validFor": null,
+          "value": "BDT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BGN - Lev búlgaro",
+          "validFor": null,
+          "value": "BGN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BHD - Dinar do Barém",
+          "validFor": null,
+          "value": "BHD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BIF - Franco do Burundi",
+          "validFor": null,
+          "value": "BIF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BMD - Dólar das Bermudas",
+          "validFor": null,
+          "value": "BMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BND - Dólar do Brunei",
+          "validFor": null,
+          "value": "BND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BOB - Boliviano (Bolívia)",
+          "validFor": null,
+          "value": "BOB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BOV - Mvdol Boliviano",
+          "validFor": null,
+          "value": "BOV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BRL - Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BSD - Dólar das Bahamas",
+          "validFor": null,
+          "value": "BSD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BTN - Ngultrum Butanês",
+          "validFor": null,
+          "value": "BTN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BWP - Pula Botsuano",
+          "validFor": null,
+          "value": "BWP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BYN - Rublo bielorrusso",
+          "validFor": null,
+          "value": "BYN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BYR - Rublo bielorrusso",
+          "validFor": null,
+          "value": "BYR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BZD - Dólar do Belize",
+          "validFor": null,
+          "value": "BZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CAD - Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CDF - Franco Congolês",
+          "validFor": null,
+          "value": "CDF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CHF - Franco Suíço",
+          "validFor": null,
+          "value": "CHF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CLF - Unidades de fomento",
+          "validFor": null,
+          "value": "CLF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CLP - Peso Chileno",
+          "validFor": null,
+          "value": "CLP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CNY - Iuane Renminbi Chinês",
+          "validFor": null,
+          "value": "CNY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "COP - Peso Colombiano",
+          "validFor": null,
+          "value": "COP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CRC - Colón da Costa Rica",
+          "validFor": null,
+          "value": "CRC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CUC - Conversível para peso cubano",
+          "validFor": null,
+          "value": "CUC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CVE - Escudo de Cabo Verde",
+          "validFor": null,
+          "value": "CVE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CZK - Coroa Tcheca",
+          "validFor": null,
+          "value": "CZK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DJF - Franco Djibuti",
+          "validFor": null,
+          "value": "DJF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DKK - Coroa Dinamarquesa",
+          "validFor": null,
+          "value": "DKK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DOP - Peso Dominicano",
+          "validFor": null,
+          "value": "DOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DZD - Dinar Argelino",
+          "validFor": null,
+          "value": "DZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EEK - Coroa Estoniana",
+          "validFor": null,
+          "value": "EEK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EGP - Libra Egípcia",
+          "validFor": null,
+          "value": "EGP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ERN - Nakfa Eritréia",
+          "validFor": null,
+          "value": "ERN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ETB - Birr Etíope",
+          "validFor": null,
+          "value": "ETB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EUR - Euro",
+          "validFor": null,
+          "value": "EUR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FJD - Dólar das Ilhas Fiji",
+          "validFor": null,
+          "value": "FJD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FKP - Libra Falklandesa",
+          "validFor": null,
+          "value": "FKP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GBP - Libra Esterlina (Reino Unido)",
+          "validFor": null,
+          "value": "GBP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GEL - Lari Georgiano",
+          "validFor": null,
+          "value": "GEL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GHS - Cedi Ganês",
+          "validFor": null,
+          "value": "GHS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GIP - Libra Gibraltina",
+          "validFor": null,
+          "value": "GIP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GMD - Dalasi Gambiano",
+          "validFor": null,
+          "value": "GMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GNF - Franco guineense",
+          "validFor": null,
+          "value": "GNF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GTQ - Quetzal Guatemalteco",
+          "validFor": null,
+          "value": "GTQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GYD - Dólar da Guiana",
+          "validFor": null,
+          "value": "GYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HKD - Dólar de Hong Kong",
+          "validFor": null,
+          "value": "HKD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HNL - Lempira Hondurenha",
+          "validFor": null,
+          "value": "HNL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HRK - Kuna",
+          "validFor": null,
+          "value": "HRK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTG - Gourde Haitiano",
+          "validFor": null,
+          "value": "HTG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HUF - Forinte Húngaro",
+          "validFor": null,
+          "value": "HUF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IDR - Rúpia Indonésia",
+          "validFor": null,
+          "value": "IDR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ILS - Novo Shekel Israelita",
+          "validFor": null,
+          "value": "ILS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "INR - Rúpia Indiana",
+          "validFor": null,
+          "value": "INR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IQD - Dinar Iraquiano",
+          "validFor": null,
+          "value": "IQD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ISK - Coroa Islandesa",
+          "validFor": null,
+          "value": "ISK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JMD - Dólar Jamaicano",
+          "validFor": null,
+          "value": "JMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JOD - Dinar Jordano",
+          "validFor": null,
+          "value": "JOD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JPY - Iene Japonês",
+          "validFor": null,
+          "value": "JPY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KES - Xelim Queniano",
+          "validFor": null,
+          "value": "KES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KGS - Som Quirguizistanês",
+          "validFor": null,
+          "value": "KGS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KHR - Riel Cambojano",
+          "validFor": null,
+          "value": "KHR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KMF - Franco comoriano",
+          "validFor": null,
+          "value": "KMF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KRW - Won Coreano",
+          "validFor": null,
+          "value": "KRW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KWD - Dinar Kuwaitiano",
+          "validFor": null,
+          "value": "KWD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KYD - Dólar das Ilhas Caimão",
+          "validFor": null,
+          "value": "KYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KZT - Tenge Cazaquistanês",
+          "validFor": null,
+          "value": "KZT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LAK - Kip Laociano",
+          "validFor": null,
+          "value": "LAK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LBP - Libra Libanesa",
+          "validFor": null,
+          "value": "LBP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LKR - Rúpia do Sri Lanca",
+          "validFor": null,
+          "value": "LKR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LRD - Dólar Liberiano",
+          "validFor": null,
+          "value": "LRD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LSL - Loti Lesotiano",
+          "validFor": null,
+          "value": "LSL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LYD - Dinar Líbio",
+          "validFor": null,
+          "value": "LYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MAD - Dirham Marroquino",
+          "validFor": null,
+          "value": "MAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MDL - Leu Moldavo",
+          "validFor": null,
+          "value": "MDL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MGA - Ariary Malgaxe",
+          "validFor": null,
+          "value": "MGA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MKD - Denar Macedônio",
+          "validFor": null,
+          "value": "MKD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MMK - Kyat de Myanmar",
+          "validFor": null,
+          "value": "MMK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MNT - Tugrik Mongol",
+          "validFor": null,
+          "value": "MNT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MOP - Pataca Macaense",
+          "validFor": null,
+          "value": "MOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MRO - Uguia mauritano",
+          "validFor": null,
+          "value": "MRO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MRU - Uguia mauritano",
+          "validFor": null,
+          "value": "MRU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MUR - Rúpia da Maurícia",
+          "validFor": null,
+          "value": "MUR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MVR - Rúpia das Maldivas",
+          "validFor": null,
+          "value": "MVR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MWK - Kwacha do Malauí",
+          "validFor": null,
+          "value": "MWK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MXN - Peso Mexicano",
+          "validFor": null,
+          "value": "MXN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MXV - Unidade de Conversão (UDI) Mexicana",
+          "validFor": null,
+          "value": "MXV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MYR - Ringgit Malaio",
+          "validFor": null,
+          "value": "MYR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MZN - Novo Metical Moçambicano",
+          "validFor": null,
+          "value": "MZN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NAD - Dólar da Namíbia",
+          "validFor": null,
+          "value": "NAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NGN - Naira Nigeriana",
+          "validFor": null,
+          "value": "NGN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NIO - Córdoba Nicaragüense",
+          "validFor": null,
+          "value": "NIO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NOK - Coroa Norueguesa",
+          "validFor": null,
+          "value": "NOK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NPR - Rúpia Nepalesa",
+          "validFor": null,
+          "value": "NPR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NZD - Dólar Neozelandês",
+          "validFor": null,
+          "value": "NZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OMR - Rial de Omã",
+          "validFor": null,
+          "value": "OMR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PAB - Balboa Panamense",
+          "validFor": null,
+          "value": "PAB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEN - Sol peruano",
+          "validFor": null,
+          "value": "PEN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PGK - Kina Papua",
+          "validFor": null,
+          "value": "PGK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PHP - Peso Filipino",
+          "validFor": null,
+          "value": "PHP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PKR - Rúpia Paquistanesa",
+          "validFor": null,
+          "value": "PKR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PLN - Zloti Polaco",
+          "validFor": null,
+          "value": "PLN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PYG - Guarani Paraguaio",
+          "validFor": null,
+          "value": "PYG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QAR - Rial do Catar",
+          "validFor": null,
+          "value": "QAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RON - Leu Romeno",
+          "validFor": null,
+          "value": "RON"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RSD - Dinar Sérvio",
+          "validFor": null,
+          "value": "RSD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RUB - Rublo Russo",
+          "validFor": null,
+          "value": "RUB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RWF - Franco Ruandês",
+          "validFor": null,
+          "value": "RWF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAR - Rial Saudita",
+          "validFor": null,
+          "value": "SAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SBD - Dólar das Ilhas Salomão",
+          "validFor": null,
+          "value": "SBD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SCR - Rúpia das Seicheles",
+          "validFor": null,
+          "value": "SCR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SEK - Coroa Sueca",
+          "validFor": null,
+          "value": "SEK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SGD - Dólar de Cingapura",
+          "validFor": null,
+          "value": "SGD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SHP - Libra de Santa Helena",
+          "validFor": null,
+          "value": "SHP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLE - Leone Serra-Leonês",
+          "validFor": null,
+          "value": "SLE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLL - Leone Serra-Leonês",
+          "validFor": null,
+          "value": "SLL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SOS - Xelim Somaliano",
+          "validFor": null,
+          "value": "SOS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SRD - Dólar do Suriname",
+          "validFor": null,
+          "value": "SRD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSP - Libra do Sudão do Sul",
+          "validFor": null,
+          "value": "SSP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "STD - Dobra de São Tomé e Príncipe",
+          "validFor": null,
+          "value": "STD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "STN - Dobra de São Tomé e Príncipe",
+          "validFor": null,
+          "value": "STN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SZL - Lilangeni Suazilandês",
+          "validFor": null,
+          "value": "SZL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "THB - Baht Tailandês",
+          "validFor": null,
+          "value": "THB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TJS - Somoni Tajiquistanês",
+          "validFor": null,
+          "value": "TJS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMT - Novo Manat Turcomenistanês",
+          "validFor": null,
+          "value": "TMT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TND - Dinar Tunisino",
+          "validFor": null,
+          "value": "TND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TOP - Pa'anga Tonganês",
+          "validFor": null,
+          "value": "TOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TRY - Lira Turca (Nova)",
+          "validFor": null,
+          "value": "TRY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TTD - Dólar de Trinidad e Tobago",
+          "validFor": null,
+          "value": "TTD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TWD - Novo Dólar de Taiwan",
+          "validFor": null,
+          "value": "TWD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TZS - Xelim Tanzaniano",
+          "validFor": null,
+          "value": "TZS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UAH - Hryvnia Ucraniano",
+          "validFor": null,
+          "value": "UAH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UGX - Xelim Ugandês",
+          "validFor": null,
+          "value": "UGX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "USD - Dólar Americano",
+          "validFor": null,
+          "value": "USD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UYU - Peso Uruguaio",
+          "validFor": null,
+          "value": "UYU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UZS - Sum Usbequistanês",
+          "validFor": null,
+          "value": "UZS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VEF - Venezuelan Bolivar Fuerte",
+          "validFor": null,
+          "value": "VEF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VES - Bolívar soberano da Venezuela",
+          "validFor": null,
+          "value": "VES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VND - Dong Vietnamita",
+          "validFor": null,
+          "value": "VND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VUV - Vatu Vanuatano",
+          "validFor": null,
+          "value": "VUV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WST - Tala Samoana",
+          "validFor": null,
+          "value": "WST"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XAF - Franco CFA (BEAC)",
+          "validFor": null,
+          "value": "XAF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XCD - Dólar das Caraíbas Orientais",
+          "validFor": null,
+          "value": "XCD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XOF - Franco CFA (BCEAO)",
+          "validFor": null,
+          "value": "XOF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XPF - Franco do Pacífico",
+          "validFor": null,
+          "value": "XPF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "YER - Rial Iemenita",
+          "validFor": null,
+          "value": "YER"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZAR - Rand Sul-Africano",
+          "validFor": null,
+          "value": "ZAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZMW - Kwacha zambiano (novo)",
+          "validFor": null,
+          "value": "ZMW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZWL - Dólar do Zimbabué",
+          "validFor": null,
+          "value": "ZWL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Data",
+      "name": "StartDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Próxima data de início",
+      "name": "NextStartDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Taxa de câmbio",
+      "name": "ConversionRate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Taxa de conversão datada",
+  "childRelationships": [],
+  "custom": false,
+  "name": "DatedConversionRate",
+  "queryable": true
+}

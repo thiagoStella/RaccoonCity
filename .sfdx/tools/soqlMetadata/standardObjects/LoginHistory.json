@@ -1,0 +1,1203 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do histórico de login",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "UserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horário de login",
+      "name": "LoginTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de login",
+      "name": "LoginType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aplicativo",
+          "validFor": null,
+          "value": "Application"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cliente offline",
+          "validFor": null,
+          "value": "Offline Client"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DataJunction",
+          "validFor": null,
+          "value": "DataJunction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autoatendimento",
+          "validFor": null,
+          "value": "Self-Service"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Central de pedidos",
+          "validFor": null,
+          "value": "Order Center"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outlook Integration",
+          "validFor": null,
+          "value": "Outlook Integration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Apex API",
+          "validFor": null,
+          "value": "Other Apex API"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DB Replication",
+          "validFor": null,
+          "value": "DB Replication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sales Anywhere",
+          "validFor": null,
+          "value": "Sales Anywhere"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partner Product",
+          "validFor": null,
+          "value": "Partner Product"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sincronizar",
+          "validFor": null,
+          "value": "Sync"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Validar",
+          "validFor": null,
+          "value": "Validate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SysAdmin Switch",
+          "validFor": null,
+          "value": "SysAdmin Switch"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Excel Integration",
+          "validFor": null,
+          "value": "Excel Integration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apex Office Toolkit",
+          "validFor": null,
+          "value": "Apex Office Toolkit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AJAX Toolkit",
+          "validFor": null,
+          "value": "AJAX Toolkit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portal de serviço ao cliente",
+          "validFor": null,
+          "value": "Customer Service Portal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site da Salesforce.com",
+          "validFor": null,
+          "value": "Salesforce.com Website"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAML Idp Iniciou o SSO",
+          "validFor": null,
+          "value": "SAML Idp Initiated SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cliente de acesso remoto",
+          "validFor": null,
+          "value": "Remote Access Client"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AppExchange",
+          "validFor": null,
+          "value": "AppExchange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAML Sfdc Iniciou o SSO",
+          "validFor": null,
+          "value": "SAML Sfdc Initiated SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portal do parceiro",
+          "validFor": null,
+          "value": "Partner Portal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO do portal de atendimento ao cliente do SAML",
+          "validFor": null,
+          "value": "SAML Customer Service Portal SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO do portal do parceiro do SAML",
+          "validFor": null,
+          "value": "SAML Partner Portal SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inscrever-se",
+          "validFor": null,
+          "value": "Signup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AppStore",
+          "validFor": null,
+          "value": "AppStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajuda e treinamento",
+          "validFor": null,
+          "value": "Help And Training"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comunidade",
+          "validFor": null,
+          "value": "Community"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAML Site SSO",
+          "validFor": null,
+          "value": "SAML Site SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Remote Access 2.0",
+          "validFor": null,
+          "value": "Remote Access 2.0"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO de terceiros",
+          "validFor": null,
+          "value": "Third Party SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário externo das comunidades do Chatter",
+          "validFor": null,
+          "value": "Chatter Communities External User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apenas API do portal de redes",
+          "validFor": null,
+          "value": "Networks Portal API Only"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO do usuário externo das comunidades do Chatter SAML",
+          "validFor": null,
+          "value": "SAML Chatter Communities External User SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO de terceiro de usuário externo das comunidades do Chatter",
+          "validFor": null,
+          "value": "Chatter Communities External User Third Party SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Integração do Salesforce Outlook",
+          "validFor": null,
+          "value": "Salesforce Outlook Integration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO de terceiros do portal de Atendimento ao cliente",
+          "validFor": null,
+          "value": "Customer Service Portal Third-Party SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSO de terceiros do Portal do parceiro",
+          "validFor": null,
+          "value": "Partner Portal Third-Party SSO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Login do funcionário na comunidade",
+          "validFor": null,
+          "value": "Employee Login to Community"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Login baseado em certificado",
+          "validFor": null,
+          "value": "Certificate-based login"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HOTP YubiKey",
+          "validFor": null,
+          "value": "HOTP YubiKey"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lightning Login",
+          "validFor": null,
+          "value": "Lightning Login"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Login sem senha",
+          "validFor": null,
+          "value": "Passwordless Login"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "IP de origem",
+      "name": "SourceIp",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "URL de login",
+      "name": "LoginUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do serviço de autenticação",
+      "name": "AuthenticationServiceId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AuthProvider",
+        "SamlSsoConfig"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de dados geográficos de login",
+      "name": "LoginGeoId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "LoginGeo"
+      ],
+      "relationshipName": "LoginGeo",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Protocolo TLS",
+      "name": "TlsProtocol",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS 1.0",
+          "validFor": null,
+          "value": "TLS 1.0"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS 1.1",
+          "validFor": null,
+          "value": "TLS 1.1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS 1.2",
+          "validFor": null,
+          "value": "TLS 1.2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS 1.3",
+          "validFor": null,
+          "value": "TLS 1.3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desconhecido",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "TLS Cipher Suite",
+      "name": "CipherSuite",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AES128-GCM-SHA256",
+          "validFor": null,
+          "value": "AES128-GCM-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AES128-SHA",
+          "validFor": null,
+          "value": "AES128-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AES128-SHA256",
+          "validFor": null,
+          "value": "AES128-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AES256-GCM-SHA384",
+          "validFor": null,
+          "value": "AES256-GCM-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AES256-SHA",
+          "validFor": null,
+          "value": "AES256-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AES256-SHA256",
+          "validFor": null,
+          "value": "AES256-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DES-CBC3-SHA",
+          "validFor": null,
+          "value": "DES-CBC3-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DHE-RSA-AES128-GCM-SHA256",
+          "validFor": null,
+          "value": "DHE-RSA-AES128-GCM-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DHE-RSA-AES128-SHA",
+          "validFor": null,
+          "value": "DHE-RSA-AES128-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DHE-RSA-AES256-GCM-SHA384",
+          "validFor": null,
+          "value": "DHE-RSA-AES256-GCM-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DHE-RSA-AES256-SHA",
+          "validFor": null,
+          "value": "DHE-RSA-AES256-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DHE-RSA-DES-CBC3-SHA",
+          "validFor": null,
+          "value": "DHE-RSA-DES-CBC3-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-ECDSA-AES128-GCM-SHA256",
+          "validFor": null,
+          "value": "ECDH-ECDSA-AES128-GCM-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-ECDSA-AES128-SHA256",
+          "validFor": null,
+          "value": "ECDH-ECDSA-AES128-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-ECDSA-AES256-GCM-SHA384",
+          "validFor": null,
+          "value": "ECDH-ECDSA-AES256-GCM-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-ECDSA-AES256-SHA384",
+          "validFor": null,
+          "value": "ECDH-ECDSA-AES256-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-RSA-AES128-GCM-SHA256",
+          "validFor": null,
+          "value": "ECDH-RSA-AES128-GCM-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-RSA-AES128-SHA256",
+          "validFor": null,
+          "value": "ECDH-RSA-AES128-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-RSA-AES256-GCM-SHA384",
+          "validFor": null,
+          "value": "ECDH-RSA-AES256-GCM-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDH-RSA-AES256-SHA384",
+          "validFor": null,
+          "value": "ECDH-RSA-AES256-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "validFor": null,
+          "value": "ECDHE-ECDSA-AES128-GCM-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-ECDSA-AES128-SHA256",
+          "validFor": null,
+          "value": "ECDHE-ECDSA-AES128-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-ECDSA-AES256-GCM-SHA384",
+          "validFor": null,
+          "value": "ECDHE-ECDSA-AES256-GCM-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-ECDSA-AES256-SHA384",
+          "validFor": null,
+          "value": "ECDHE-ECDSA-AES256-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES128-CBC-SHA",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES128-CBC-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES128-GCM-SHA256",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES128-GCM-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES128-SHA",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES128-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES128-SHA256",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES128-SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES256-CBC-SHA",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES256-CBC-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES256-GCM-SHA384",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES256-GCM-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES256-SHA",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES256-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-AES256-SHA384",
+          "validFor": null,
+          "value": "ECDHE-RSA-AES256-SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ECDHE-RSA-DES-CBC3-SHA",
+          "validFor": null,
+          "value": "ECDHE-RSA-DES-CBC3-SHA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS_AES_128_GCM_SHA256",
+          "validFor": null,
+          "value": "TLS_AES_128_GCM_SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS_AES_256_GCM_SHA384",
+          "validFor": null,
+          "value": "TLS_AES_256_GCM_SHA384"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TLS_CHACHA20_POLY1305_SHA256",
+          "validFor": null,
+          "value": "TLS_CHACHA20_POLY1305_SHA256"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desconhecido",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Login via OBTER",
+      "name": "OptionsIsGet",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Login via PUBLICAR",
+      "name": "OptionsIsPost",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Navegador",
+      "name": "Browser",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Plataforma",
+      "name": "Platform",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Status",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Aplicativo",
+      "name": "Application",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Versão do cliente",
+      "name": "ClientVersion",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de API",
+      "name": "ApiType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Versão da API",
+      "name": "ApiVersion",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Código do país",
+      "name": "CountryIso",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Referência do método de autenticação",
+      "name": "AuthMethodReference",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Subtipo de login",
+      "name": "LoginSubType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome de usuário e senha",
+          "validFor": null,
+          "value": "UI Username-Password"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome de usuário e senha do OAuth",
+          "validFor": null,
+          "value": "OAuth Username-Password"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário e agente do OAuth",
+          "validFor": null,
+          "value": "OAuth User-Agent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário e agente do OAuth para aplicativos híbridos",
+          "validFor": null,
+          "value": "OAuth User-Agent for Hybrid Apps"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário e agente do OAuth com token de ID",
+          "validFor": null,
+          "value": "OAuth User-Agent with ID Token"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Servidor da Web do OAuth",
+          "validFor": null,
+          "value": "OAuth Web Server"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Servidor da Web do OAuth para aplicativos híbridos",
+          "validFor": null,
+          "value": "OAuth Web Server for Hybrid Apps"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Credenciais do cliente do OAuth",
+          "validFor": null,
+          "value": "OAuth Client Credentials"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Histórico de login",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "ApiEvent",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ApiEventStream",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthSession",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BulkApiResultEvent",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BulkApiResultEventStore",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "IdentityVerificationEvent",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListViewEvent",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListViewEventStream",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "LoginAsEventStream",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "LoginEventStream",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PermissionSetEvent",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PermissionSetEventStore",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReportEvent",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReportEventStream",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VerificationHistory",
+      "deprecatedAndHidden": false,
+      "field": "LoginHistoryId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "LoginHistory",
+  "queryable": true
+}

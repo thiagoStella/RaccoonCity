@@ -1,0 +1,258 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da preferência do usuário",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "UserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "93",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Preferência",
+      "name": "Preference",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tempo de espera padrão do lembrete de evento",
+          "validFor": null,
+          "value": "57"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hora padrão do lembrete de tarefa",
+          "validFor": null,
+          "value": "58"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evitar registros ao carregar",
+          "validFor": null,
+          "value": "91"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preenchimento automático no Apex após pressionar tecla",
+          "validFor": null,
+          "value": "92"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Visualforce Viewstate Inspector",
+          "validFor": null,
+          "value": "93"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de previsão exibido",
+          "validFor": null,
+          "value": "94"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tema do editor",
+          "validFor": null,
+          "value": "96"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamanho da fonte do editor",
+          "validFor": null,
+          "value": "97"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pastas marcadas",
+          "validFor": null,
+          "value": "98"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar plano de consulta",
+          "validFor": null,
+          "value": "99"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativar a nova caixa de diálogo Abrir",
+          "validFor": null,
+          "value": "100"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de transporte de email",
+          "validFor": null,
+          "value": "101"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pastas do Wave fixadas",
+          "validFor": null,
+          "value": "102"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Densidade",
+          "validFor": null,
+          "value": "108"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preferências do Lightning Flow Builder",
+          "validFor": null,
+          "value": "109"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formatar com guias",
+          "validFor": null,
+          "value": "111"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formatar largura da guia",
+          "validFor": null,
+          "value": "112"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formatar largura da impressão",
+          "validFor": null,
+          "value": "113"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição de atividades da página de registro",
+          "validFor": null,
+          "value": "114"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preferências do Explorador de fluxo do Lightning",
+          "validFor": null,
+          "value": "118"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preferências de Migrar para o fluxo",
+          "validFor": null,
+          "value": "119"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preferências de Opção de autenticação simples",
+          "validFor": null,
+          "value": "120"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tempo de silenciar notificações de alerta de vendas",
+          "validFor": null,
+          "value": "122"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor",
+      "name": "Value",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Preferência do usuário",
+  "childRelationships": [],
+  "custom": false,
+  "name": "UserPreference",
+  "queryable": true
+}

@@ -1,0 +1,676 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do Connected App",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do Connected App",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AllowAdminApprovedUsersOnly",
+      "name": "OptionsAllowAdminApprovedUsersOnly",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "RefreshTokenValidityMetric",
+      "name": "OptionsRefreshTokenValidityMetric",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HasSessionLevelPolicy",
+      "name": "OptionsHasSessionLevelPolicy",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "isInternal",
+      "name": "OptionsIsInternal",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "FullContentPushNotifications",
+      "name": "OptionsFullContentPushNotifications",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CodeCredentialGuestEnabled",
+      "name": "OptionsCodeCredentialGuestEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AppIssueJwtTokenEnabled",
+      "name": "OptionsAppIssueJwtTokenEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "10",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Bloquear o aplicativo depois",
+      "name": "MobileSessionTimeout",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1 minuto",
+          "validFor": null,
+          "value": "1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5 minutos",
+          "validFor": null,
+          "value": "5"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "10 minutos",
+          "validFor": null,
+          "value": "10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "30 minutos",
+          "validFor": null,
+          "value": "30"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "60 minutos",
+          "validFor": null,
+          "value": "60"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "120 minutos",
+          "validFor": null,
+          "value": "120"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "180 minutos",
+          "validFor": null,
+          "value": "180"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "240 minutos",
+          "validFor": null,
+          "value": "240"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tamanho do PIN",
+      "name": "PinLength",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "4",
+          "validFor": null,
+          "value": "4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5",
+          "validFor": null,
+          "value": "5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "6",
+          "validFor": null,
+          "value": "6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "7",
+          "validFor": null,
+          "value": "7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "8",
+          "validFor": null,
+          "value": "8"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "URL do início",
+      "name": "StartUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "URL do início móvel",
+      "name": "MobileStartUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Política de token de atualização:",
+      "name": "RefreshTokenValidityPeriod",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tempo limite do Uvid",
+      "name": "UvidTimeout",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1 minuto",
+          "validFor": null,
+          "value": "1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5 minutos",
+          "validFor": null,
+          "value": "5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "10 minutos",
+          "validFor": null,
+          "value": "10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "15 minutos",
+          "validFor": null,
+          "value": "15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "30 minutos",
+          "validFor": null,
+          "value": "30"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tempo limite do UVID de usuário nomeado",
+      "name": "NamedUserUvidTimeout",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1 minuto",
+          "validFor": null,
+          "value": "1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5 minutos",
+          "validFor": null,
+          "value": "5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "10 minutos",
+          "validFor": null,
+          "value": "10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "15 minutos",
+          "validFor": null,
+          "value": "15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "30 minutos",
+          "validFor": null,
+          "value": "30"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Connected App",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "ApiEvent",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedAppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssetTokenEvent",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedAppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "IdentityProviderEventStore",
+      "deprecatedAndHidden": false,
+      "field": "AppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "IdentityVerificationEvent",
+      "deprecatedAndHidden": false,
+      "field": "ResourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "IdpEventLog",
+      "deprecatedAndHidden": false,
+      "field": "AppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "InstalledMobileApp",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedApplicationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "InstalledMobileApps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SPSamlAttributes",
+      "deprecatedAndHidden": false,
+      "field": "ConnectivityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "SetupEntityAccess",
+      "deprecatedAndHidden": false,
+      "field": "SetupEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "SetupEntityAccessItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserAppMenuCustomization",
+      "deprecatedAndHidden": false,
+      "field": "ApplicationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvAccount",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedAppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvAccountStaging",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedAppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvisioningConfig",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedAppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvisioningRequest",
+      "deprecatedAndHidden": false,
+      "field": "ConnectedAppId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VerificationHistory",
+      "deprecatedAndHidden": false,
+      "field": "ResourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "ConnectedApplication",
+  "queryable": true
+}

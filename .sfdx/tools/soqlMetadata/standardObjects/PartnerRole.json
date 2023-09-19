@@ -1,0 +1,275 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do valor do papel do parceiro",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Rótulo mestre",
+      "name": "MasterLabel",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome da API",
+      "name": "ApiName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ordem de classificação",
+      "name": "SortOrder",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Papel inverso",
+      "name": "ReverseRole",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "System Integrator",
+          "validFor": null,
+          "value": "System Integrator"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agency",
+          "validFor": null,
+          "value": "Agency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Advertiser",
+          "validFor": null,
+          "value": "Advertiser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VAR/Reseller",
+          "validFor": null,
+          "value": "VAR/Reseller"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Distributor",
+          "validFor": null,
+          "value": "Distributor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Developer",
+          "validFor": null,
+          "value": "Developer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Broker",
+          "validFor": null,
+          "value": "Broker"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lender",
+          "validFor": null,
+          "value": "Lender"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Supplier",
+          "validFor": null,
+          "value": "Supplier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Institution",
+          "validFor": null,
+          "value": "Institution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contractor",
+          "validFor": null,
+          "value": "Contractor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dealer",
+          "validFor": null,
+          "value": "Dealer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consultant",
+          "validFor": null,
+          "value": "Consultant"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Valor do papel do parceiro",
+  "childRelationships": [],
+  "custom": false,
+  "name": "PartnerRole",
+  "queryable": true
+}

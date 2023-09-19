@@ -26,6 +26,7 @@ global class Attachment {
     global Id LastModifiedById;
     global Datetime SystemModstamp;
     global String Description;
+    global List<FlowExecutionErrorEvent> ContextRecord;
     global List<FlowRecordRelation> RelatedRecord;
 
     global Attachment () 

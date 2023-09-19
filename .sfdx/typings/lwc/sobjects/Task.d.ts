@@ -50,6 +50,10 @@ declare module "@salesforce/schema/Task.Description" {
   const Description:string;
   export default Description;
 }
+declare module "@salesforce/schema/Task.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/Task.IsDeleted" {
   const IsDeleted:boolean;
   export default IsDeleted;

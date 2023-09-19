@@ -10,6 +10,10 @@ declare module "@salesforce/schema/Contract.AccountId" {
   const AccountId:any;
   export default AccountId;
 }
+declare module "@salesforce/schema/Contract.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/Contract.Pricebook2" {
   const Pricebook2:any;
   export default Pricebook2;

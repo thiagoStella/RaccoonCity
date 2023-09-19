@@ -1,0 +1,1158 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do compromisso de alteração",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de reprodução",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cabeçalho do compromisso de alteração",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do proprietário",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome da Macro",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Código ISO da moeda",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "richtextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Descrição",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tem suporte para o Classic",
+      "name": "IsAlohaSupported",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tem suporte para o Lightning",
+      "name": "IsLightningSupported",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Aplicar a",
+      "name": "StartingContext",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajuste de autorização do pagamento",
+          "validFor": null,
+          "value": "PaymentAuthAdjustment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aplicativo de fatura da nota de crédito",
+          "validFor": null,
+          "value": "CreditMemoInvApplication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Armazenamento de eventos de irregularidades de API",
+          "validFor": null,
+          "value": "ApiAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativo",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ausência de recurso",
+          "validFor": null,
+          "value": "ResourceAbsence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autorização do pagamento",
+          "validFor": null,
+          "value": "PaymentAuthorization"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Carteira digital",
+          "validFor": null,
+          "value": "DigitalWallet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caso",
+          "validFor": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Categoria do compromisso",
+          "validFor": null,
+          "value": "AppointmentCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chamada por voz",
+          "validFor": null,
+          "value": "VoiceCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cliente",
+          "validFor": null,
+          "value": "cliente__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compromisso",
+          "validFor": null,
+          "value": "Event"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compromisso de serviço",
+          "validFor": null,
+          "value": "ServiceAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consentimento da inscrição de comunicação",
+          "validFor": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consentimento da parte",
+          "validFor": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consentimento do formulário de autorização",
+          "validFor": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conta",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contato",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrato",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrato de serviço",
+          "validFor": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Convite do compromisso",
+          "validFor": null,
+          "value": "AppointmentInvitation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cupom",
+          "validFor": null,
+          "value": "Coupon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Discovery",
+          "validFor": null,
+          "value": "Discovery__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Documento do Quip do modo de exibição de lista",
+          "validFor": null,
+          "value": "ContentDocumentListViewMapping"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email do ponto de contato",
+          "validFor": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço do ponto de contato",
+          "validFor": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entidade legal",
+          "validFor": null,
+          "value": "LegalEntity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entrada do modelo de plano de trabalho",
+          "validFor": null,
+          "value": "WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Etapa de trabalho",
+          "validFor": null,
+          "value": "WorkStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exceção de processo",
+          "validFor": null,
+          "value": "ProcessException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatura",
+          "validFor": null,
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fatura da linha de pagamento",
+          "validFor": null,
+          "value": "PaymentLineInvoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feedback de detecção de ameaças",
+          "validFor": null,
+          "value": "ThreatDetectionFeedback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fila",
+          "validFor": null,
+          "value": "LocationWaitlist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formulário de autorização",
+          "validFor": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Funcionário",
+          "validFor": null,
+          "value": "Funcionario__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gateway de pagamento",
+          "validFor": null,
+          "value": "PaymentGateway"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grupo",
+          "validFor": null,
+          "value": "CollaborationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grupo de local",
+          "validFor": null,
+          "value": "LocationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grupo do tipo de trabalho",
+          "validFor": null,
+          "value": "WorkTypeGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Horário de funcionamento",
+          "validFor": null,
+          "value": "OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Imagem",
+          "validFor": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incidente",
+          "validFor": null,
+          "value": "Incident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incidente e problema relacionado",
+          "validFor": null,
+          "value": "ProblemIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indivíduo",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inscrição de comunicação",
+          "validFor": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Instantâneo de saldo de finanças",
+          "validFor": null,
+          "value": "FinanceBalanceSnapshot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Intervalo de tempo do tópico do compromisso",
+          "validFor": null,
+          "value": "AppointmentTopicTimeSlot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item de linha da ordem de trabalho",
+          "validFor": null,
+          "value": "WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item de linha do contrato",
+          "validFor": null,
+          "value": "ContractLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item de linha do pedido de retorno",
+          "validFor": null,
+          "value": "ReturnOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item do feed",
+          "validFor": null,
+          "value": "FeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item relacionado ao incidente",
+          "validFor": null,
+          "value": "IncidentRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item relacionado ao problema",
+          "validFor": null,
+          "value": "ProblemRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item relacionado à solicitação de alteração",
+          "validFor": null,
+          "value": "ChangeRequestRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead",
+          "validFor": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Linha de fatura",
+          "validFor": null,
+          "value": "InvoiceLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Linha de nota de crédito",
+          "validFor": null,
+          "value": "CreditMemoLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lista de espera",
+          "validFor": null,
+          "value": "Waitlist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Locação",
+          "validFor": null,
+          "value": "Locacao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Local",
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Localizacão",
+          "validFor": null,
+          "value": "Localizacao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Loja de evento de irregularidades do relatório",
+          "validFor": null,
+          "value": "ReportAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Loja de evento do Credential Stuffing",
+          "validFor": null,
+          "value": "CredentialStuffingEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Loja de evento do sequestro da sessão",
+          "validFor": null,
+          "value": "SessionHijackingEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Loja de vendas do segmento da promoção",
+          "validFor": null,
+          "value": "PromotionSegmentSalesStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lojas",
+          "validFor": null,
+          "value": "Loja__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Marco do objeto",
+          "validFor": null,
+          "value": "EntityMilestone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro do grupo do tipo de trabalho",
+          "validFor": null,
+          "value": "WorkTypeGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Meta de promoção",
+          "validFor": null,
+          "value": "PromotionTarget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Método de pagamento alternativo",
+          "validFor": null,
+          "value": "AlternativePaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Método de pagamento com cartão",
+          "validFor": null,
+          "value": "CardPaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de etapas de trabalho",
+          "validFor": null,
+          "value": "WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de mensagem da fila",
+          "validFor": null,
+          "value": "LocWaitlistMsgTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de plano de trabalho",
+          "validFor": null,
+          "value": "WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nível da promoção",
+          "validFor": null,
+          "value": "PromotionTier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nota de crédito",
+          "validFor": null,
+          "value": "CreditMemo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oportunidade",
+          "validFor": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordem de trabalho",
+          "validFor": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pagamento",
+          "validFor": null,
+          "value": "Payment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pagamento da linha de reembolso",
+          "validFor": null,
+          "value": "RefundLinePayment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Papel do contato da oportunidade",
+          "validFor": null,
+          "value": "OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Participante da lista de espera",
+          "validFor": null,
+          "value": "WaitlistParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pedido",
+          "validFor": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pedido de retorno",
+          "validFor": null,
+          "value": "ReturnOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pessoa",
+          "validFor": null,
+          "value": "Pessoa__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Plano de trabalho",
+          "validFor": null,
+          "value": "WorkPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema",
+          "validFor": null,
+          "value": "Problem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema relacionado ao caso",
+          "validFor": null,
+          "value": "CaseRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problema relacionado à solicitação de alteração",
+          "validFor": null,
+          "value": "ChangeRequestRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produto",
+          "validFor": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Programação de consumo",
+          "validFor": null,
+          "value": "ConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Projeto",
+          "validFor": null,
+          "value": "Projeto__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promoção",
+          "validFor": null,
+          "value": "Promotion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propósito do uso de dados",
+          "validFor": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qualificador da promoção",
+          "validFor": null,
+          "value": "PromotionQualifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rastreamento Localização",
+          "validFor": null,
+          "value": "Rastreamento_Localizacao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rastreamento Pessoa",
+          "validFor": null,
+          "value": "Rastreamento_Pessoa__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurso atribuído",
+          "validFor": null,
+          "value": "AssignedResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurso de serviço",
+          "validFor": null,
+          "value": "ServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurso em serviço de lista de espera",
+          "validFor": null,
+          "value": "WaitlistServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reembolso",
+          "validFor": null,
+          "value": "Refund"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro de gateway de pagamento",
+          "validFor": null,
+          "value": "PaymentGatewayLog"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relacionamento de ativos",
+          "validFor": null,
+          "value": "AssetRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Segmento de mercado da promoção",
+          "validFor": null,
+          "value": "PromotionMarketSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Segmento de promoção",
+          "validFor": null,
+          "value": "PromotionSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sessão do Messaging",
+          "validFor": null,
+          "value": "MessagingSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Solicitação de alteração",
+          "validFor": null,
+          "value": "ChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sugestão",
+          "validFor": null,
+          "value": "Sugestao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tarefa",
+          "validFor": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone do ponto de contato",
+          "validFor": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tempo da inscrição de comunicação",
+          "validFor": null,
+          "value": "CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Território de serviço",
+          "validFor": null,
+          "value": "ServiceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Texto do formulário de autorização",
+          "validFor": null,
+          "value": "AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de canal de assinatura de comunicação",
+          "validFor": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de canal de engajamento",
+          "validFor": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de trabalho",
+          "validFor": null,
+          "value": "WorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de trabalho da lista de espera",
+          "validFor": null,
+          "value": "WaitlistWorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de trabalho do território de serviço",
+          "validFor": null,
+          "value": "ServiceTerritoryWorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transação de finanças",
+          "validFor": null,
+          "value": "FinanceTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Turno",
+          "validFor": null,
+          "value": "Shift"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uso de dados do formulário de autorização",
+          "validFor": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário",
+          "validFor": null,
+          "value": "User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Messaging",
+          "validFor": null,
+          "value": "MessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Veículo",
+          "validFor": null,
+          "value": "Veiculo__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Web Cart Document",
+          "validFor": null,
+          "value": "WebCartDocument"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "label": "Compromisso de alteração Macro",
+  "childRelationships": [],
+  "custom": false,
+  "name": "MacroChangeEvent",
+  "queryable": false
+}

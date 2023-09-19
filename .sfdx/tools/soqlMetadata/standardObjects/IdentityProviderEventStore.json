@@ -1,0 +1,491 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da loja de evento do provedor de identidade",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Identificador de compromisso",
+      "name": "EventIdentifier",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "UserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "User",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data do evento",
+      "name": "EventDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Identidade usada",
+      "name": "IdentityUsed",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da entidade",
+      "name": "SamlEntityUrl",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tipo de uso",
+      "name": "InitiatedBy",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAML iniciado por IdP",
+          "validFor": null,
+          "value": "IdP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAML iniciado por SP",
+          "validFor": null,
+          "value": "SP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autorização de OAuth",
+          "validFor": null,
+          "value": "OauthAuthorize"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Troca de chave de OAuth",
+          "validFor": null,
+          "value": "OauthTokenExchange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Unused"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "ErrorCode",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Êxito",
+          "validFor": null,
+          "value": "Success"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: a organização ainda não configurou Meus domínios",
+          "validFor": null,
+          "value": "NoSubdomain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: URL de ponto final do provedor de identidade inválido",
+          "validFor": null,
+          "value": "InvalidIdpEndpoint"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: não é possível analisar a solicitação de autenticação do provedor de serviços",
+          "validFor": null,
+          "value": "InvalidAuthnRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: provedor de serviços configurado incorretamente ou inválido",
+          "validFor": null,
+          "value": "InvalidSp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: o usuário não tem um identificador de federação selecionado",
+          "validFor": null,
+          "value": "NoUserFedId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: o usuário não tem acesso a este provedor de serviços",
+          "validFor": null,
+          "value": "NoAccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: o certificado IdP é inválido ou não existe",
+          "validFor": null,
+          "value": "InvalidSettings"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: não foi localizado ID de Spoke",
+          "validFor": null,
+          "value": "NoSpokeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: configurações de SP do Spoke inválidas",
+          "validFor": null,
+          "value": "InvalidSpokeSp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: o usuário não tem um valor para o atributo personalizado de assunto",
+          "validFor": null,
+          "value": "NoCustomAttrValue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: campo personalizado não localizado",
+          "validFor": null,
+          "value": "NoCustomField"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário desconectado devido a solicitação de autenticação forçada",
+          "validFor": null,
+          "value": "ForceAuthNLogout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: emissor inválido",
+          "validFor": null,
+          "value": "InvalidIssuer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: assinatura inválida",
+          "validFor": null,
+          "value": "InvalidSignature"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: não é possível resolver a solicitação em um Provedor de serviços",
+          "validFor": null,
+          "value": "UnableToResolve"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: nível de sessão inválido",
+          "validFor": null,
+          "value": "InvalidSessionLevel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: erro interno",
+          "validFor": null,
+          "value": "InternalError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro OAuth",
+          "validFor": null,
+          "value": "OauthError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: acesso negado ao aplicativo",
+          "validFor": null,
+          "value": "AppAccessDenied"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: aplicativo bloqueado",
+          "validFor": null,
+          "value": "AppBlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: concessão inválida",
+          "validFor": null,
+          "value": "ClientUnapproved"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: código de autorização expirado",
+          "validFor": null,
+          "value": "CodeExpired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: credenciais de cliente inválidas",
+          "validFor": null,
+          "value": "InvalidClientCredentials"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: código de autorização inválido",
+          "validFor": null,
+          "value": "InvalidCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: escopos inválidos",
+          "validFor": null,
+          "value": "InvalidScope"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: credenciais de usuário inválidas",
+          "validFor": null,
+          "value": "InvalidUserCredentials"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro: ID de dispositivo inválido",
+          "validFor": null,
+          "value": "InvalidDeviceId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro desconhecido",
+          "validFor": null,
+          "value": "UnknownError"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tipo de SSO",
+      "name": "SsoType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Saml"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Oidc"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da sessão de autorização",
+      "name": "AuthSessionId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AuthSession"
+      ],
+      "relationshipName": "AuthSession",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do Connected App",
+      "name": "AppId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ConnectedApplication"
+      ],
+      "relationshipName": "App",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tem URL de logout",
+      "name": "HasLogoutUrl",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    }
+  ],
+  "label": "Loja de evento do provedor de identidade",
+  "childRelationships": [],
+  "custom": false,
+  "name": "IdentityProviderEventStore",
+  "queryable": true
+}

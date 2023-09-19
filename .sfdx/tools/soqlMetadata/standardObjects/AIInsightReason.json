@@ -1,0 +1,636 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do motivo do Insight de IA",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do valor de Insight de IA",
+      "name": "AiInsightValueId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "AIInsightValue"
+      ],
+      "relationshipName": "AiInsightValue",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Intensidade",
+      "name": "Intensity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Contribuição",
+      "name": "Contribution",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Variância",
+      "name": "Variance",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do campo",
+      "name": "FieldName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Operador",
+      "name": "Operator",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "E",
+          "validFor": null,
+          "value": "And"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ou",
+          "validFor": null,
+          "value": "Or"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Não",
+          "validFor": null,
+          "value": "Not"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LessThan",
+          "validFor": null,
+          "value": "LessThan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LessThanOrEqual",
+          "validFor": null,
+          "value": "LessThanOrEqual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GreaterThan",
+          "validFor": null,
+          "value": "GreaterThan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GreaterThanOrEqual",
+          "validFor": null,
+          "value": "GreaterThanOrEqual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Igual",
+          "validFor": null,
+          "value": "Equals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NotEquals",
+          "validFor": null,
+          "value": "NotEquals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somar",
+          "validFor": null,
+          "value": "Add"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subtrair",
+          "validFor": null,
+          "value": "Subtract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiplicar",
+          "validFor": null,
+          "value": "Multiply"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dividir",
+          "validFor": null,
+          "value": "Divide"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IsNull",
+          "validFor": null,
+          "value": "IsNull"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IsNotNull",
+          "validFor": null,
+          "value": "IsNotNull"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "StartsWith",
+          "validFor": null,
+          "value": "StartsWith"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EndsWith",
+          "validFor": null,
+          "value": "EndsWith"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contém",
+          "validFor": null,
+          "value": "Contains"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Concat",
+          "validFor": null,
+          "value": "Concat"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DoesNotContain",
+          "validFor": null,
+          "value": "DoesNotContain"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entre",
+          "validFor": null,
+          "value": "Between"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Em",
+          "validFor": null,
+          "value": "In"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Valor do campo",
+      "name": "FieldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Valor do recurso",
+      "name": "FeatureValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de recurso",
+      "name": "FeatureType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Binary",
+          "validFor": null,
+          "value": "Binary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Integral",
+          "validFor": null,
+          "value": "Integral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Real",
+          "validFor": null,
+          "value": "Real"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Currency",
+          "validFor": null,
+          "value": "Currency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Percent",
+          "validFor": null,
+          "value": "Percent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ID",
+          "validFor": null,
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Picklist",
+          "validFor": null,
+          "value": "Picklist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MultiPicklist",
+          "validFor": null,
+          "value": "MultiPicklist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Combobox",
+          "validFor": null,
+          "value": "Combobox"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date",
+          "validFor": null,
+          "value": "Date"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DateTime",
+          "validFor": null,
+          "value": "DateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Text",
+          "validFor": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TextArea",
+          "validFor": null,
+          "value": "TextArea"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "URL",
+          "validFor": null,
+          "value": "URL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do motivo do Insight de IA",
+      "name": "RelatedInsightReasonId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AIInsightReason"
+      ],
+      "relationshipName": "RelatedInsightReason",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ordem de classificação",
+      "name": "SortOrder",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Chave de rótulo do motivo",
+      "name": "ReasonLabelKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "label": "Motivo do Insight de IA",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightReason",
+      "deprecatedAndHidden": false,
+      "field": "RelatedInsightReasonId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "AIInsightReason",
+  "queryable": true
+}

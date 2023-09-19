@@ -1,0 +1,2611 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do compromisso de alteração",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de reprodução",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cabeçalho do compromisso de alteração",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome da Instrução de Macro",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Código ISO da moeda",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da Macro",
+      "name": "MacroId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Macro"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Operação",
+      "name": "Operation",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "selecionar",
+          "validFor": null,
+          "value": "Select"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "definir",
+          "validFor": null,
+          "value": "Set"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "inserir",
+          "validFor": null,
+          "value": "Insert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "submit",
+          "validFor": null,
+          "value": "Submit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "fechar",
+          "validFor": null,
+          "value": "Close"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "if",
+          "validFor": null,
+          "value": "If"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "elseif",
+          "validFor": null,
+          "value": "ElseIf"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "else",
+          "validFor": null,
+          "value": "Else"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "endif",
+          "validFor": null,
+          "value": "EndIf"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Destino",
+      "name": "Target",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Adicionar membro",
+          "validFor": null,
+          "value": "QuickAction.CollaborationGroup.NewGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Adicionar registro",
+          "validFor": null,
+          "value": "QuickAction.CollaborationGroup.NewGroupRecord"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Agendar compromisso",
+          "validFor": null,
+          "value": "QuickAction.Opportunity.runtime_appointmentbooking__Flow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Agendar compromisso",
+          "validFor": null,
+          "value": "QuickAction.Account.runtime_appointmentbooking__Flow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Agendar compromisso",
+          "validFor": null,
+          "value": "QuickAction.Lead.runtime_appointmentbooking__Flow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Alterar a prioridade",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Alterar data",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Alterar status",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar caso",
+          "validFor": null,
+          "value": "QuickAction.Case._LightningUpdateCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar chamada de voz",
+          "validFor": null,
+          "value": "QuickAction.VoiceCall._LightningCallNotes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar contato",
+          "validFor": null,
+          "value": "QuickAction.Contact._LightningRelatedContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar envio de mensagens ao usuário",
+          "validFor": null,
+          "value": "QuickAction.MessagingEndUser._UpdateMessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar incidente",
+          "validFor": null,
+          "value": "QuickAction.Incident._LightningUpdateIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar problema",
+          "validFor": null,
+          "value": "QuickAction.Problem._LightningUpdateProblem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Atualizar solicitação de alteração",
+          "validFor": null,
+          "value": "QuickAction.ChangeRequest._LightningUpdateChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Criar nova tarefa",
+          "validFor": null,
+          "value": "QuickAction.FeedItem.NewTaskFromFeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Editar comentários",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Email",
+          "validFor": null,
+          "value": "QuickAction.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Modificar Compromisso de serviço",
+          "validFor": null,
+          "value": "QuickAction.ServiceAppointment.runtime_appointmentbooking__Out_Modify"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Nova conta",
+          "validFor": null,
+          "value": "QuickAction.NewAccount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Nova nota",
+          "validFor": null,
+          "value": "QuickAction.NewNote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Nova oportunidade",
+          "validFor": null,
+          "value": "QuickAction.NewOpportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Nova tarefa",
+          "validFor": null,
+          "value": "QuickAction.NewTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Novo caso",
+          "validFor": null,
+          "value": "QuickAction.NewCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Novo caso filho",
+          "validFor": null,
+          "value": "QuickAction.Case.NewChildCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Novo compromisso",
+          "validFor": null,
+          "value": "QuickAction.NewEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Novo contato",
+          "validFor": null,
+          "value": "QuickAction.NewContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Novo grupo",
+          "validFor": null,
+          "value": "QuickAction.NewGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Novo lead",
+          "validFor": null,
+          "value": "QuickAction.NewLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Registrar uma chamada",
+          "validFor": null,
+          "value": "QuickAction.LogACall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de Registrar uma chamada",
+          "validFor": null,
+          "value": "QuickAction.Case.LogACall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anexos",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.AttachmentIds.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anexos",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ContentDocumentIds.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Case.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Problem.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Problem.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Incident.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Case.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Problem.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Event.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Case.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Incident.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Task.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assunto",
+          "validFor": null,
+          "value": "Field.Incident.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Atribuído a",
+          "validFor": null,
+          "value": "Field.Task.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Atribuído a",
+          "validFor": null,
+          "value": "Field.Event.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cargo",
+          "validFor": null,
+          "value": "Field.Contact.Title.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cargo",
+          "validFor": null,
+          "value": "Field.Contact.Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cargo",
+          "validFor": null,
+          "value": "Field.Contact.Title.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Caso pai",
+          "validFor": null,
+          "value": "Field.Case.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Categoria",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Category"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Categoria",
+          "validFor": null,
+          "value": "Field.Problem.Category"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.CcAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.CcAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.CcAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CCO",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.BccAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CCO",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.BccAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CCO",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.BccAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comentários",
+          "validFor": null,
+          "value": "Field.Task.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comentários",
+          "validFor": null,
+          "value": "Field.Task.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comentários",
+          "validFor": null,
+          "value": "Field.Task.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comentários",
+          "validFor": null,
+          "value": "Field.Task.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compromisso Todo o Dia",
+          "validFor": null,
+          "value": "Field.Event.IsAllDayEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo",
+          "validFor": null,
+          "value": "Field.Note.Body.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo",
+          "validFor": null,
+          "value": "Field.Note.Body.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo",
+          "validFor": null,
+          "value": "Field.Note.Body.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo",
+          "validFor": null,
+          "value": "Field.Note.Body"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo do HTML",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo do HTML",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo do HTML",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Corpo do HTML",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data de fechamento",
+          "validFor": null,
+          "value": "Field.Opportunity.CloseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data de resolução",
+          "validFor": null,
+          "value": "Field.Problem.ResolutionDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data de vencimento",
+          "validFor": null,
+          "value": "Field.Task.ActivityDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data e hora de início",
+          "validFor": null,
+          "value": "Field.Incident.StartDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data e hora de término",
+          "validFor": null,
+          "value": "Field.Incident.EndDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "De",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ValidatedFromAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Problem.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Problem.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Problem.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Case.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Case.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Case.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Incident.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Incident.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Case.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Incident.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Problem.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Field.Incident.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Field.Lead.Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Field.Contact.Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Empresa",
+          "validFor": null,
+          "value": "Field.Lead.Company"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Empresa",
+          "validFor": null,
+          "value": "Field.Lead.Company.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Empresa",
+          "validFor": null,
+          "value": "Field.Lead.Company.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fase",
+          "validFor": null,
+          "value": "Field.Opportunity.StageName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fim",
+          "validFor": null,
+          "value": "Field.Event.EndDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grupo",
+          "validFor": null,
+          "value": "Field.CollaborationGroupRecord.CollaborationGroupId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grupo",
+          "validFor": null,
+          "value": "Field.CollaborationGroupMember.CollaborationGroupId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Ajuste de autorização do pagamento ativa",
+          "validFor": null,
+          "value": "Tab.PaymentAuthAdjustment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Aplicativo de fatura da nota de crédito ativa",
+          "validFor": null,
+          "value": "Tab.CreditMemoInvApplication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Armazenamento de eventos de irregularidades de API ativa",
+          "validFor": null,
+          "value": "Tab.ApiAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Ativo ativa",
+          "validFor": null,
+          "value": "Tab.Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Ausência de recurso ativa",
+          "validFor": null,
+          "value": "Tab.ResourceAbsence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Autorização do pagamento ativa",
+          "validFor": null,
+          "value": "Tab.PaymentAuthorization"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Carteira digital ativa",
+          "validFor": null,
+          "value": "Tab.DigitalWallet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Caso ativa",
+          "validFor": null,
+          "value": "Tab.Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Categoria do compromisso ativa",
+          "validFor": null,
+          "value": "Tab.AppointmentCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia chamada de voz ativa",
+          "validFor": null,
+          "value": "Tab.VoiceCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Cliente ativa",
+          "validFor": null,
+          "value": "Tab.cliente__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Compromisso ativa",
+          "validFor": null,
+          "value": "Tab.Event"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Compromisso de serviço ativa",
+          "validFor": null,
+          "value": "Tab.ServiceAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Consentimento da inscrição de comunicação ativa",
+          "validFor": null,
+          "value": "Tab.CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Consentimento da parte ativa",
+          "validFor": null,
+          "value": "Tab.PartyConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Consentimento do formulário de autorização ativa",
+          "validFor": null,
+          "value": "Tab.AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Conta ativa",
+          "validFor": null,
+          "value": "Tab.Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Contato ativa",
+          "validFor": null,
+          "value": "Tab.Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Contrato ativa",
+          "validFor": null,
+          "value": "Tab.Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Contrato de serviço ativa",
+          "validFor": null,
+          "value": "Tab.ServiceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Convite do compromisso ativa",
+          "validFor": null,
+          "value": "Tab.AppointmentInvitation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Cupom ativa",
+          "validFor": null,
+          "value": "Tab.Coupon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Discovery ativa",
+          "validFor": null,
+          "value": "Tab.Discovery__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Email do ponto de contato ativa",
+          "validFor": null,
+          "value": "Tab.ContactPointEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Endereço do ponto de contato ativa",
+          "validFor": null,
+          "value": "Tab.ContactPointAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Entidade legal ativa",
+          "validFor": null,
+          "value": "Tab.LegalEntity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Entrada do modelo de plano de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Envio de mensagens ao usuário ativa",
+          "validFor": null,
+          "value": "Tab.MessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Etapa de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Exceção de processo ativa",
+          "validFor": null,
+          "value": "Tab.ProcessException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Fatura ativa",
+          "validFor": null,
+          "value": "Tab.Invoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Fatura da linha de pagamento ativa",
+          "validFor": null,
+          "value": "Tab.PaymentLineInvoice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Feedback de detecção de ameaças ativa",
+          "validFor": null,
+          "value": "Tab.ThreatDetectionFeedback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Formulário de autorização ativa",
+          "validFor": null,
+          "value": "Tab.AuthorizationForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Funcionário ativa",
+          "validFor": null,
+          "value": "Tab.Funcionario__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Gateway de pagamento ativa",
+          "validFor": null,
+          "value": "Tab.PaymentGateway"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Grupo ativa",
+          "validFor": null,
+          "value": "Tab.CollaborationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Grupo de local ativa",
+          "validFor": null,
+          "value": "Tab.LocationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Grupo do tipo de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkTypeGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Horário de funcionamento ativa",
+          "validFor": null,
+          "value": "Tab.OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Imagem ativa",
+          "validFor": null,
+          "value": "Tab.Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Incidente ativa",
+          "validFor": null,
+          "value": "Tab.Incident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Incidente e problema relacionado ativa",
+          "validFor": null,
+          "value": "Tab.ProblemIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Indivíduo ativa",
+          "validFor": null,
+          "value": "Tab.Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Inscrição de comunicação ativa",
+          "validFor": null,
+          "value": "Tab.CommSubscription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Instantâneo de saldo de finanças ativa",
+          "validFor": null,
+          "value": "Tab.FinanceBalanceSnapshot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Intervalo de tempo do tópico do compromisso ativa",
+          "validFor": null,
+          "value": "Tab.AppointmentTopicTimeSlot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item de linha da ordem de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item de linha do contrato ativa",
+          "validFor": null,
+          "value": "Tab.ContractLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item de linha do pedido de retorno ativa",
+          "validFor": null,
+          "value": "Tab.ReturnOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item do feed ativa",
+          "validFor": null,
+          "value": "Tab.FeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item relacionado ao incidente ativa",
+          "validFor": null,
+          "value": "Tab.IncidentRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item relacionado ao problema ativa",
+          "validFor": null,
+          "value": "Tab.ProblemRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Item relacionado à solicitação de alteração ativa",
+          "validFor": null,
+          "value": "Tab.ChangeRequestRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Lead ativa",
+          "validFor": null,
+          "value": "Tab.Lead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Linha de fatura ativa",
+          "validFor": null,
+          "value": "Tab.InvoiceLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Linha de nota de crédito ativa",
+          "validFor": null,
+          "value": "Tab.CreditMemoLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Lista de espera ativa",
+          "validFor": null,
+          "value": "Tab.Waitlist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Locação ativa",
+          "validFor": null,
+          "value": "Tab.Locacao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Local ativa",
+          "validFor": null,
+          "value": "Tab.Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Localizacão ativa",
+          "validFor": null,
+          "value": "Tab.Localizacao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Loja de evento de irregularidades do relatório ativa",
+          "validFor": null,
+          "value": "Tab.ReportAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Loja de evento do Credential Stuffing ativa",
+          "validFor": null,
+          "value": "Tab.CredentialStuffingEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Loja de evento do sequestro da sessão ativa",
+          "validFor": null,
+          "value": "Tab.SessionHijackingEventStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Loja de vendas do segmento da promoção ativa",
+          "validFor": null,
+          "value": "Tab.PromotionSegmentSalesStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Lojas ativa",
+          "validFor": null,
+          "value": "Tab.Loja__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Marco do objeto ativa",
+          "validFor": null,
+          "value": "Tab.EntityMilestone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Membro do grupo do tipo de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkTypeGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Meta de promoção ativa",
+          "validFor": null,
+          "value": "Tab.PromotionTarget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Método de pagamento alternativo ativa",
+          "validFor": null,
+          "value": "Tab.AlternativePaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Método de pagamento com cartão ativa",
+          "validFor": null,
+          "value": "Tab.CardPaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Modelo de etapas de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Modelo de plano de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Nível da promoção ativa",
+          "validFor": null,
+          "value": "Tab.PromotionTier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Nota de crédito ativa",
+          "validFor": null,
+          "value": "Tab.CreditMemo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Oportunidade ativa",
+          "validFor": null,
+          "value": "Tab.Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Ordem de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Pagamento ativa",
+          "validFor": null,
+          "value": "Tab.Payment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Pagamento da linha de reembolso ativa",
+          "validFor": null,
+          "value": "Tab.RefundLinePayment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Papel do contato da oportunidade ativa",
+          "validFor": null,
+          "value": "Tab.OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Participante da lista de espera ativa",
+          "validFor": null,
+          "value": "Tab.WaitlistParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Pedido ativa",
+          "validFor": null,
+          "value": "Tab.Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Pedido de retorno ativa",
+          "validFor": null,
+          "value": "Tab.ReturnOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Pessoa ativa",
+          "validFor": null,
+          "value": "Tab.Pessoa__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Plano de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Problema ativa",
+          "validFor": null,
+          "value": "Tab.Problem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Problema relacionado ao caso ativa",
+          "validFor": null,
+          "value": "Tab.CaseRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Problema relacionado à solicitação de alteração ativa",
+          "validFor": null,
+          "value": "Tab.ChangeRequestRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Produto ativa",
+          "validFor": null,
+          "value": "Tab.Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Programação de consumo ativa",
+          "validFor": null,
+          "value": "Tab.ConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Projeto ativa",
+          "validFor": null,
+          "value": "Tab.Projeto__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Promoção ativa",
+          "validFor": null,
+          "value": "Tab.Promotion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Propósito do uso de dados ativa",
+          "validFor": null,
+          "value": "Tab.DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Qualificador da promoção ativa",
+          "validFor": null,
+          "value": "Tab.PromotionQualifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Rastreamento Localização ativa",
+          "validFor": null,
+          "value": "Tab.Rastreamento_Localizacao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Rastreamento Pessoa ativa",
+          "validFor": null,
+          "value": "Tab.Rastreamento_Pessoa__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Recurso atribuído ativa",
+          "validFor": null,
+          "value": "Tab.AssignedResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Recurso de serviço ativa",
+          "validFor": null,
+          "value": "Tab.ServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Recurso em serviço de lista de espera ativa",
+          "validFor": null,
+          "value": "Tab.WaitlistServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Reembolso ativa",
+          "validFor": null,
+          "value": "Tab.Refund"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Registro de gateway de pagamento ativa",
+          "validFor": null,
+          "value": "Tab.PaymentGatewayLog"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Relacionamento de ativos ativa",
+          "validFor": null,
+          "value": "Tab.AssetRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Segmento de mercado da promoção ativa",
+          "validFor": null,
+          "value": "Tab.PromotionMarketSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Segmento de promoção ativa",
+          "validFor": null,
+          "value": "Tab.PromotionSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Sessão do Messaging ativa",
+          "validFor": null,
+          "value": "Tab.MessagingSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Solicitação de alteração ativa",
+          "validFor": null,
+          "value": "Tab.ChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Sugestão ativa",
+          "validFor": null,
+          "value": "Tab.Sugestao__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tarefa ativa",
+          "validFor": null,
+          "value": "Tab.Task"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Telefone do ponto de contato ativa",
+          "validFor": null,
+          "value": "Tab.ContactPointPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tempo da inscrição de comunicação ativa",
+          "validFor": null,
+          "value": "Tab.CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Território de serviço ativa",
+          "validFor": null,
+          "value": "Tab.ServiceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Texto do formulário de autorização ativa",
+          "validFor": null,
+          "value": "Tab.AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tipo de canal de assinatura de comunicação ativa",
+          "validFor": null,
+          "value": "Tab.CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tipo de canal de engajamento ativa",
+          "validFor": null,
+          "value": "Tab.EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tipo de trabalho ativa",
+          "validFor": null,
+          "value": "Tab.WorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tipo de trabalho da lista de espera ativa",
+          "validFor": null,
+          "value": "Tab.WaitlistWorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Tipo de trabalho do território de serviço ativa",
+          "validFor": null,
+          "value": "Tab.ServiceTerritoryWorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Transação de finanças ativa",
+          "validFor": null,
+          "value": "Tab.FinanceTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Turno ativa",
+          "validFor": null,
+          "value": "Tab.Shift"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Uso de dados do formulário de autorização ativa",
+          "validFor": null,
+          "value": "Tab.AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Usuário ativa",
+          "validFor": null,
+          "value": "Tab.User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guia Veículo ativa",
+          "validFor": null,
+          "value": "Tab.Veiculo__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impacto",
+          "validFor": null,
+          "value": "Field.Incident.Impact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impacto",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Impact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impacto",
+          "validFor": null,
+          "value": "Field.Problem.Impact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incidente importante",
+          "validFor": null,
+          "value": "Field.Incident.IsMajorIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Início",
+          "validFor": null,
+          "value": "Field.Event.StartDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Local",
+          "validFor": null,
+          "value": "Field.Event.Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Local",
+          "validFor": null,
+          "value": "Field.Event.Location.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Local",
+          "validFor": null,
+          "value": "Field.Event.Location.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Membro",
+          "validFor": null,
+          "value": "Field.CollaborationGroupMember.MemberId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modelo de email",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.EmailTemplateId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nível de risco",
+          "validFor": null,
+          "value": "Field.ChangeRequest.RiskLevel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome",
+          "validFor": null,
+          "value": "Field.Task.WhoId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome",
+          "validFor": null,
+          "value": "Field.Event.WhoId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da conta",
+          "validFor": null,
+          "value": "Field.Account.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da conta",
+          "validFor": null,
+          "value": "Field.Account.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da conta",
+          "validFor": null,
+          "value": "Field.Account.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da conta",
+          "validFor": null,
+          "value": "Field.Contact.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da conta",
+          "validFor": null,
+          "value": "Field.Opportunity.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da oportunidade",
+          "validFor": null,
+          "value": "Field.Opportunity.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da oportunidade",
+          "validFor": null,
+          "value": "Field.Opportunity.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da oportunidade",
+          "validFor": null,
+          "value": "Field.Opportunity.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome do contato",
+          "validFor": null,
+          "value": "Field.Case.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome do usuário do Messaging",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome do usuário do Messaging",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome do usuário do Messaging",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Papel do membro do Grupo",
+          "validFor": null,
+          "value": "Field.CollaborationGroupMember.CollaborationRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Para",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ToAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Para",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ToAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Para",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ToAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Particular",
+          "validFor": null,
+          "value": "Field.Note.IsPrivate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Permitir clientes",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.CanHaveGuests"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "Field.Contact.FirstName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "Field.Contact.FirstName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "Field.Lead.FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "Field.Contact.FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "Field.Lead.FirstName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "Field.Lead.FirstName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prioridade",
+          "validFor": null,
+          "value": "Field.Incident.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prioridade",
+          "validFor": null,
+          "value": "Field.Task.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prioridade",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prioridade",
+          "validFor": null,
+          "value": "Field.Case.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prioridade",
+          "validFor": null,
+          "value": "Field.Problem.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário da solicitação de alteração",
+          "validFor": null,
+          "value": "Field.ChangeRequest.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário do caso",
+          "validFor": null,
+          "value": "Field.Case.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário do incidente",
+          "validFor": null,
+          "value": "Field.Incident.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário do problema",
+          "validFor": null,
+          "value": "Field.Problem.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Próxima etapa",
+          "validFor": null,
+          "value": "Field.Opportunity.NextStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Próxima etapa",
+          "validFor": null,
+          "value": "Field.Opportunity.NextStep.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Próxima etapa",
+          "validFor": null,
+          "value": "Field.Opportunity.NextStep.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro",
+          "validFor": null,
+          "value": "Field.CollaborationGroupRecord.RecordId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relativo a",
+          "validFor": null,
+          "value": "Field.Event.WhatId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relativo a",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.RelatedToId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relativo a",
+          "validFor": null,
+          "value": "Field.Task.WhatId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resolvido por",
+          "validFor": null,
+          "value": "Field.Problem.ResolvedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Setor",
+          "validFor": null,
+          "value": "Field.Account.Industry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site da Web",
+          "validFor": null,
+          "value": "Field.Account.Website"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "Field.Contact.LastName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "Field.Contact.LastName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "Field.Lead.LastName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "Field.Lead.LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "Field.Contact.LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "Field.Lead.LastName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Case.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Task.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Incident.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Problem.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status de consentimento de mensagens",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.MessagingConsentStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone",
+          "validFor": null,
+          "value": "Field.Contact.Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone",
+          "validFor": null,
+          "value": "Field.Lead.Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone",
+          "validFor": null,
+          "value": "Field.Account.Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo",
+          "validFor": null,
+          "value": "Field.Account.Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo",
+          "validFor": null,
+          "value": "Field.ChangeRequest.ChangeType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de acesso",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.CollaborationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Título",
+          "validFor": null,
+          "value": "Field.Lead.Title.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Título",
+          "validFor": null,
+          "value": "Field.Note.Title.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Título",
+          "validFor": null,
+          "value": "Field.Lead.Title.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Título",
+          "validFor": null,
+          "value": "Field.Lead.Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Título",
+          "validFor": null,
+          "value": "Field.Note.Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Título",
+          "validFor": null,
+          "value": "Field.Note.Title.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tratamento",
+          "validFor": null,
+          "value": "Field.Lead.Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tratamento",
+          "validFor": null,
+          "value": "Field.Contact.Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Urgência",
+          "validFor": null,
+          "value": "Field.Problem.Urgency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Urgência",
+          "validFor": null,
+          "value": "Field.Incident.Urgency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Valor",
+          "validFor": null,
+          "value": "Field.Opportunity.Amount"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor",
+      "name": "Value",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Value Record ID",
+      "name": "ValueRecord",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Classificar ordem",
+      "name": "SortOrder",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    }
+  ],
+  "label": "Compromisso de alteração Instrução de Macro",
+  "childRelationships": [],
+  "custom": false,
+  "name": "MacroInstructionChangeEvent",
+  "queryable": false
+}

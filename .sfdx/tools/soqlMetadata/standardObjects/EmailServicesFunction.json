@@ -1,0 +1,564 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do serviço",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ativo",
+      "name": "IsActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do serviço de email",
+      "name": "FunctionName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Aceitar email de",
+      "name": "AuthorizedSenders",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Configurações da segurança avançada de email",
+      "name": "IsAuthenticationRequired",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "TLS obrigatória",
+      "name": "IsTlsRequired",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "All",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Aceitar anexos",
+      "name": "AttachmentOption",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nenhuma",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente anexos de texto",
+          "validFor": null,
+          "value": "TextOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente anexos binários",
+          "validFor": null,
+          "value": "BinaryOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Tudo",
+          "validFor": null,
+          "value": "All"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente nomes de anexo, nenhum conteúdo",
+          "validFor": null,
+          "value": "NoContent"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da classe",
+      "name": "ApexClassId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApexClass"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ação para limite da taxa de email excedido",
+      "name": "OverLimitAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Usar padrão do sistema",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Devolver mensagem",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descartar mensagem",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recolocar mensagem em fila",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ação para serviço de email desativado",
+      "name": "FunctionInactiveAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Usar padrão do sistema",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Devolver mensagem",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descartar mensagem",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recolocar mensagem em fila",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ação para endereço de email desativado",
+      "name": "AddressInactiveAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Usar padrão do sistema",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Devolver mensagem",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descartar mensagem",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recolocar mensagem em fila",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ação de remetente não autenticado",
+      "name": "AuthenticationFailureAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Usar padrão do sistema",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Devolver mensagem",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descartar mensagem",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recolocar mensagem em fila",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ação de remetente não autorizado",
+      "name": "AuthorizationFailureAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Usar padrão do sistema",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Devolver mensagem",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descartar mensagem",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recolocar mensagem em fila",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ativar roteamento de erro",
+      "name": "IsErrorRoutingEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Rotear emails com erro para este endereço de email",
+      "name": "ErrorRoutingAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "email"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Converter anexos de texto em anexos binários",
+      "name": "IsTextAttachmentsAsBinary",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Serviço de email",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailServicesAddress",
+      "deprecatedAndHidden": false,
+      "field": "FunctionId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Addresses",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "EmailServicesFunction",
+  "queryable": true
+}

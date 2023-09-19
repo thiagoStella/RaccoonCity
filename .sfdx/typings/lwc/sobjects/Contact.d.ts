@@ -170,6 +170,10 @@ declare module "@salesforce/schema/Contact.Description" {
   const Description:string;
   export default Description;
 }
+declare module "@salesforce/schema/Contact.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/Contact.Owner" {
   const Owner:any;
   export default Owner;
@@ -261,4 +265,12 @@ declare module "@salesforce/schema/Contact.Individual" {
 declare module "@salesforce/schema/Contact.IndividualId" {
   const IndividualId:any;
   export default IndividualId;
+}
+declare module "@salesforce/schema/Contact.Level__c" {
+  const Level__c:string;
+  export default Level__c;
+}
+declare module "@salesforce/schema/Contact.Languages__c" {
+  const Languages__c:string;
+  export default Languages__c;
 }

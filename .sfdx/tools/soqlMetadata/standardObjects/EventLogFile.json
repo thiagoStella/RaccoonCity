@@ -1,0 +1,745 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da Event Log File",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de compromisso",
+      "name": "EventType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API",
+          "validFor": null,
+          "value": "API"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Uso total da API",
+          "validFor": null,
+          "value": "ApiTotalUsage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Callout do Apex",
+          "validFor": null,
+          "value": "ApexCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Execução do Apex",
+          "validFor": null,
+          "value": "ApexExecution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API REST do Apex",
+          "validFor": null,
+          "value": "ApexRestApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SOAP do Apex",
+          "validFor": null,
+          "value": "ApexSoap"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Acionador do Apex",
+          "validFor": null,
+          "value": "ApexTrigger"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exceção inesperada do Apex",
+          "validFor": null,
+          "value": "ApexUnexpectedException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Execução assíncrona do relatório",
+          "validFor": null,
+          "value": "AsyncReportRun"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro de violação do CORS",
+          "validFor": null,
+          "value": "CorsViolation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Solicitação da Aura",
+          "validFor": null,
+          "value": "AuraRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Limite de Apex de execução longa simultânea",
+          "validFor": null,
+          "value": "ConcurrentLongRunningApexLimit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chamada de continuação",
+          "validFor": null,
+          "value": "ContinuationCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chamada interorganizacional externa",
+          "validFor": null,
+          "value": "ExternalCrossOrgCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chamada externa do Apex personalizada",
+          "validFor": null,
+          "value": "ExternalCustomApexCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chamada da origem de dados externa",
+          "validFor": null,
+          "value": "ExternalDataSourceCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chamada do OData externa",
+          "validFor": null,
+          "value": "ExternalODataCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API em massa",
+          "validFor": null,
+          "value": "BulkApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API em massa API 2.0",
+          "validFor": null,
+          "value": "BulkApi2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operação do conjunto de alterações",
+          "validFor": null,
+          "value": "ChangeSetOperation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Console",
+          "validFor": null,
+          "value": "Console"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Distribuição de conteúdo",
+          "validFor": null,
+          "value": "ContentDistribution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Link de documentos de conteúdo",
+          "validFor": null,
+          "value": "ContentDocumentLink"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transferência de conteúdo",
+          "validFor": null,
+          "value": "ContentTransfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Painel",
+          "validFor": null,
+          "value": "Dashboard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Download de anexo de documento",
+          "validFor": null,
+          "value": "DocumentAttachmentDownloads"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Execução de fluxo",
+          "validFor": null,
+          "value": "FlowExecution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Redirecionamentos do nome de host",
+          "validFor": null,
+          "value": "HostnameRedirects"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ativos externos inseguros",
+          "validFor": null,
+          "value": "InsecureExternalAssets"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição do artigo do Knowledge",
+          "validFor": null,
+          "value": "KnowledgeArticleView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erro do Lightning",
+          "validFor": null,
+          "value": "LightningError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interação do Lightning",
+          "validFor": null,
+          "value": "LightningInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Logger do Lightning",
+          "validFor": null,
+          "value": "LightningLogger"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Visualização de página do Lightning",
+          "validFor": null,
+          "value": "LightningPageView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desempenho do Lightning",
+          "validFor": null,
+          "value": "LightningPerformance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Login",
+          "validFor": null,
+          "value": "Login"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Login como",
+          "validFor": null,
+          "value": "LoginAs"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Logout",
+          "validFor": null,
+          "value": "Logout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operação da API de metadados",
+          "validFor": null,
+          "value": "MetadataApiOperation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relatório de vários blocos",
+          "validFor": null,
+          "value": "MultiBlockReport"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Credencial nomeada",
+          "validFor": null,
+          "value": "NamedCredential"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Um uso comercial",
+          "validFor": null,
+          "value": "OneCommerceUsage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Instalação do pacote",
+          "validFor": null,
+          "value": "PackageInstall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Execução em fila",
+          "validFor": null,
+          "value": "QueuedExecution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relatório",
+          "validFor": null,
+          "value": "Report"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exportação de relatório",
+          "validFor": null,
+          "value": "ReportExport"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rest API",
+          "validFor": null,
+          "value": "RestApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sandbox",
+          "validFor": null,
+          "value": "Sandbox"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pesquisar",
+          "validFor": null,
+          "value": "Search"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pesquisar clique",
+          "validFor": null,
+          "value": "SearchClick"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sites",
+          "validFor": null,
+          "value": "Sites"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criptografia da plataforma",
+          "validFor": null,
+          "value": "PlatformEncryption"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fluxo de trabalho com base em horário",
+          "validFor": null,
+          "value": "TimeBasedWorkflow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Segurança da transação",
+          "validFor": null,
+          "value": "TransactionSecurity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rastreamento de UI",
+          "validFor": null,
+          "value": "UITracking"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "URI",
+          "validFor": null,
+          "value": "URI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Solicitação do Visualforce",
+          "validFor": null,
+          "value": "VisualforceRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alteração de Wave",
+          "validFor": null,
+          "value": "WaveChange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Download do Wave",
+          "validFor": null,
+          "value": "WaveDownload"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interação de Wave",
+          "validFor": null,
+          "value": "WaveInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desempenho de Wave",
+          "validFor": null,
+          "value": "WavePerformance"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data do log",
+      "name": "LogDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Comprimento do arquivo de log",
+      "name": "LogFileLength",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de conteúdo do arquivo de log",
+      "name": "LogFileContentType",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Versão da API",
+      "name": "ApiVersion",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sequência",
+      "name": "Sequence",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Intervalo",
+      "name": "Interval",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Horário",
+          "validFor": null,
+          "value": "Hourly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Diário",
+          "validFor": null,
+          "value": "Daily"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nomes de campo do arquivo de log",
+      "name": "LogFileFieldNames",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tipos de campo do arquivo de log",
+      "name": "LogFileFieldTypes",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Arquivo de log",
+      "name": "LogFile",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "base64"
+    }
+  ],
+  "label": "Event Log File",
+  "childRelationships": [],
+  "custom": false,
+  "name": "EventLogFile",
+  "queryable": true
+}

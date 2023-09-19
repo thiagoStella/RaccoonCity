@@ -8,7 +8,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Case ID",
+      "label": "ID do caso",
       "name": "Id",
       "nillable": false,
       "picklistValues": [],
@@ -25,7 +25,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Deleted",
+      "label": "Excluído",
       "name": "IsDeleted",
       "nillable": false,
       "picklistValues": [],
@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Master Record ID",
+      "label": "ID do registro mestre",
       "name": "MasterRecordId",
       "nillable": true,
       "picklistValues": [],
@@ -61,7 +61,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Case Number",
+      "label": "Número do caso",
       "name": "CaseNumber",
       "nillable": false,
       "picklistValues": [],
@@ -78,7 +78,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact ID",
+      "label": "ID do contato",
       "name": "ContactId",
       "nillable": true,
       "picklistValues": [],
@@ -97,7 +97,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account ID",
+      "label": "ID da conta",
       "name": "AccountId",
       "nillable": true,
       "picklistValues": [],
@@ -116,7 +116,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Asset ID",
+      "label": "ID do ativo",
       "name": "AssetId",
       "nillable": true,
       "picklistValues": [],
@@ -135,7 +135,27 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Parent Case ID",
+      "label": "ID da Origem de caso",
+      "name": "SourceId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "EmailMessage",
+        "MessagingSession"
+      ],
+      "relationshipName": "Source",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do caso pai",
       "name": "ParentId",
       "nillable": true,
       "picklistValues": [],
@@ -154,7 +174,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Name",
+      "label": "Nome",
       "name": "SuppliedName",
       "nillable": true,
       "picklistValues": [],
@@ -171,7 +191,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Email Address",
+      "label": "Endereço de email",
       "name": "SuppliedEmail",
       "nillable": true,
       "picklistValues": [],
@@ -188,7 +208,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Phone",
+      "label": "Telefone",
       "name": "SuppliedPhone",
       "nillable": true,
       "picklistValues": [],
@@ -205,7 +225,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Company",
+      "label": "Empresa",
       "name": "SuppliedCompany",
       "nillable": true,
       "picklistValues": [],
@@ -222,7 +242,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Case Type",
+      "label": "Tipo do caso",
       "name": "Type",
       "nillable": true,
       "picklistValues": [
@@ -321,7 +341,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Case Reason",
+      "label": "Motivo do caso",
       "name": "Reason",
       "nillable": true,
       "picklistValues": [
@@ -388,7 +408,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Case Origin",
+      "label": "Origem do caso",
       "name": "Origin",
       "nillable": true,
       "picklistValues": [
@@ -427,7 +447,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Subject",
+      "label": "Assunto",
       "name": "Subject",
       "nillable": true,
       "picklistValues": [],
@@ -444,7 +464,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Priority",
+      "label": "Prioridade",
       "name": "Priority",
       "nillable": true,
       "picklistValues": [
@@ -483,7 +503,7 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Description",
+      "label": "Descrição",
       "name": "Description",
       "nillable": true,
       "picklistValues": [],
@@ -500,7 +520,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Closed",
+      "label": "Fechado",
       "name": "IsClosed",
       "nillable": false,
       "picklistValues": [],
@@ -517,7 +537,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Closed Date",
+      "label": "Data de fechamento",
       "name": "ClosedDate",
       "nillable": true,
       "picklistValues": [],
@@ -534,7 +554,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Escalated",
+      "label": "Escalado",
       "name": "IsEscalated",
       "nillable": false,
       "picklistValues": [],
@@ -546,12 +566,51 @@
     {
       "aggregatable": true,
       "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Moeda do caso",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
       "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Owner ID",
+      "label": "ID do proprietário",
       "name": "OwnerId",
       "nillable": false,
       "picklistValues": [],
@@ -571,7 +630,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Created Date",
+      "label": "Data de criação",
       "name": "CreatedDate",
       "nillable": false,
       "picklistValues": [],
@@ -588,7 +647,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Created By ID",
+      "label": "Criado pelo ID",
       "name": "CreatedById",
       "nillable": false,
       "picklistValues": [],
@@ -607,7 +666,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Modified Date",
+      "label": "Data da última modificação",
       "name": "LastModifiedDate",
       "nillable": false,
       "picklistValues": [],
@@ -624,7 +683,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Last Modified By ID",
+      "label": "Última modificação pelo ID",
       "name": "LastModifiedById",
       "nillable": false,
       "picklistValues": [],
@@ -643,7 +702,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "System Modstamp",
+      "label": "Modstamp do sistema",
       "name": "SystemModstamp",
       "nillable": false,
       "picklistValues": [],
@@ -660,7 +719,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact Phone",
+      "label": "Telefone do contato",
       "name": "ContactPhone",
       "nillable": true,
       "picklistValues": [],
@@ -677,7 +736,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact Mobile",
+      "label": "Celular do contato",
       "name": "ContactMobile",
       "nillable": true,
       "picklistValues": [],
@@ -694,7 +753,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact Email",
+      "label": "Email do contato",
       "name": "ContactEmail",
       "nillable": true,
       "picklistValues": [],
@@ -711,7 +770,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Contact Fax",
+      "label": "Fax do contato",
       "name": "ContactFax",
       "nillable": true,
       "picklistValues": [],
@@ -728,7 +787,7 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Internal Comments",
+      "label": "Comentários internos",
       "name": "Comments",
       "nillable": true,
       "picklistValues": [],
@@ -745,7 +804,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Viewed Date",
+      "label": "Data da última visualização",
       "name": "LastViewedDate",
       "nillable": true,
       "picklistValues": [],
@@ -762,7 +821,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Referenced Date",
+      "label": "Última data citada",
       "name": "LastReferencedDate",
       "nillable": true,
       "picklistValues": [],
@@ -770,10 +829,192 @@
       "relationshipName": null,
       "sortable": true,
       "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Engineering Req Number",
+      "name": "EngineeringReqNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA Violation",
+      "name": "SLAViolation__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Product",
+      "name": "Product__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1040",
+          "validFor": null,
+          "value": "GC1040"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1060",
+          "validFor": null,
+          "value": "GC1060"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3020",
+          "validFor": null,
+          "value": "GC3020"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3040",
+          "validFor": null,
+          "value": "GC3040"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3060",
+          "validFor": null,
+          "value": "GC3060"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5020",
+          "validFor": null,
+          "value": "GC5020"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5040",
+          "validFor": null,
+          "value": "GC5040"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5060",
+          "validFor": null,
+          "value": "GC5060"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1020",
+          "validFor": null,
+          "value": "GC1020"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Potential Liability",
+      "name": "PotentialLiability__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     }
   ],
-  "label": "Case",
+  "label": "Caso",
   "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
     {
       "cascadeDelete": true,
       "childSObject": "ActivityHistory",
@@ -866,6 +1107,36 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "CaseMilestone",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CaseMilestones",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CaseRelatedIssue",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CaseRelatedIssues",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CaseRelatedIssueChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "CaseShare",
       "deprecatedAndHidden": false,
       "field": "CaseId",
@@ -902,6 +1173,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TeamTemplateRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ChangeRequestRelatedIssue",
+      "deprecatedAndHidden": false,
+      "field": "RelatedIssueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ChangeRequestRelatedIssues",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ChangeRequestRelatedIssueChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedIssueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -956,7 +1247,27 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
       "deprecatedAndHidden": false,
       "field": "FirstPublishLocationId",
       "junctionIdListNames": [],
@@ -982,6 +1293,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Emails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -1046,12 +1377,42 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "FlowRecordRelation",
       "deprecatedAndHidden": false,
       "field": "RelatedRecordId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingSession",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "MessagingSessions",
       "restrictedDelete": false
     },
     {
@@ -1062,6 +1423,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "OpenActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessException",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessExceptions",
       "restrictedDelete": false
     },
     {
@@ -1105,6 +1476,46 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrder",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ReturnOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ServiceAppointment",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ServiceAppointments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointmentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Task",
       "deprecatedAndHidden": false,
@@ -1132,6 +1543,46 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RelatedRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrder",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     }
   ],

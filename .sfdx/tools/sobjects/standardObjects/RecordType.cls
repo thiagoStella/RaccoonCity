@@ -25,7 +25,9 @@ global class RecordType {
     global Datetime SystemModstamp;
     global List<Campaign> CampaignMemberRecordType;
     global List<ContentWorkspace> DefaultRecordType;
-    global List<Name> RecordType;
+    global List<GtwyProvPaymentMethodType> RecordType;
+    global List<PromptVersion> TargetRecordType;
+    global List<RecentlyViewed> RecordType;
 
     global RecordType () 
     {

@@ -210,6 +210,10 @@ declare module "@salesforce/schema/Order.StatusCode" {
   const StatusCode:string;
   export default StatusCode;
 }
+declare module "@salesforce/schema/Order.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/Order.OrderNumber" {
   const OrderNumber:string;
   export default OrderNumber;
