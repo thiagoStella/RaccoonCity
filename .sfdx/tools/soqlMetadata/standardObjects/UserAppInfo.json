@@ -1,0 +1,269 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do Aplicativo usado pela última vez",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Código ISO da moeda",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "UserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "User",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fator forma",
+      "name": "FormFactor",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone",
+          "validFor": null,
+          "value": "Small"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tablet",
+          "validFor": null,
+          "value": "Medium"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Área de trabalho",
+          "validFor": null,
+          "value": "Large"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da definição de aplicativo",
+      "name": "AppDefinitionId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AppDefinition"
+      ],
+      "relationshipName": "AppDefinition",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Aplicativo usado pela última vez",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "UserAppInfo",
+  "queryable": true
+}

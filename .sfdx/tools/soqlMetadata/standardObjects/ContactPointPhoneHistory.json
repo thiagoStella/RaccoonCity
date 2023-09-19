@@ -1,0 +1,665 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do histórico do telefone do ponto de contato",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de Telefone do ponto de contato",
+      "name": "ContactPointPhoneId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContactPointPhone"
+      ],
+      "relationshipName": "ContactPointPhone",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Campo alterado",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Classificação de preferência",
+          "validFor": null,
+          "value": "PreferenceRank"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Código da área",
+          "validFor": null,
+          "value": "AreaCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criado",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data de Ativo de",
+          "validFor": null,
+          "value": "ActiveFromDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data de Ativo para",
+          "validFor": null,
+          "value": "ActiveToDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "É primário",
+          "validFor": null,
+          "value": "IsPrimary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "É telefone comercial",
+          "validFor": null,
+          "value": "IsBusinessPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "É telefone pessoal",
+          "validFor": null,
+          "value": "IsPersonalPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evento do feed",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indivíduo mesclado",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Melhor hora para a hora de início do contato",
+          "validFor": null,
+          "value": "BestTimeToContactStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Melhor hora para a hora de término do contato",
+          "validFor": null,
+          "value": "BestTimeToContactEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Melhor hora para o fuso horário do contato",
+          "validFor": null,
+          "value": "BestTimeToContactTimezone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome do proprietário",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Número de extensão",
+          "validFor": null,
+          "value": "ExtensionNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Número de telefone",
+          "validFor": null,
+          "value": "TelephoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Número de telefone internacional formatado",
+          "validFor": null,
+          "value": "FormattedInternationalPhoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Número de telefone nacional formatado",
+          "validFor": null,
+          "value": "FormattedNationalPhoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pai",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pode receber fax",
+          "validFor": null,
+          "value": "IsFaxCapable"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pode receber SMS",
+          "validFor": null,
+          "value": "IsSmsCapable"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário (Aceito)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário (Atribuição)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro bloqueado.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro desbloqueado.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de telefone",
+          "validFor": null,
+          "value": "PhoneType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tipo de uso",
+          "validFor": null,
+          "value": "UsageType"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de dados",
+      "name": "DataType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AnyType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AutoNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Base64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "BitVector"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Currency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DataCategoryGroupReference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Division"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Double"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DynamicEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedBase64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EntityId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EnumOrId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ExternalId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "File"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlMultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlStringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "InetAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Json"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Namespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Percent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Raw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SfdcEncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SimpleNamespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "StringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Switchable_PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TimeOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Url"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "YearQuarter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor antigo",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Novo valor",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Histórico do telefone do ponto de contato",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContactPointPhoneHistory",
+  "queryable": true
+}

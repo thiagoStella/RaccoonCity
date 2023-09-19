@@ -10,6 +10,7 @@ global class Contract {
     global Id Id;
     global Account Account;
     global Id AccountId;
+    global String CurrencyIsoCode;
     global Pricebook2 Pricebook2;
     global Id Pricebook2Id;
     global String OwnerExpirationNotice;
@@ -76,11 +77,16 @@ global class Contract {
     global List<RecordActionHistory> RecordActionHistories;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<AIInsightValue> SobjectLookupValue;
+    global List<AIRecordInsight> Target;
+    global List<ContentDocumentLinkChangeEvent> LinkedEntity;
     global List<ContentVersion> FirstPublishLocation;
+    global List<EmailMessageChangeEvent> RelatedTo;
     global List<EventChangeEvent> What;
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
-    global List<FlowRecordRelation> RelatedRecord;
+    global List<FlowExecutionErrorEvent> ContextRecord;
+    global List<FlowOrchestrationWorkItem> RelatedRecord;
     global List<OrderChangeEvent> Contract;
     global List<OutgoingEmail> RelatedTo;
     global List<TaskChangeEvent> What;

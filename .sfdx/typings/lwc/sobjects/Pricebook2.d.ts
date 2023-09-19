@@ -10,6 +10,10 @@ declare module "@salesforce/schema/Pricebook2.Name" {
   const Name:string;
   export default Name;
 }
+declare module "@salesforce/schema/Pricebook2.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/Pricebook2.CreatedDate" {
   const CreatedDate:any;
   export default CreatedDate;

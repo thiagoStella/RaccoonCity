@@ -23,6 +23,7 @@ global class Note {
     global User LastModifiedBy;
     global Id LastModifiedById;
     global Datetime SystemModstamp;
+    global List<FlowExecutionErrorEvent> ContextRecord;
     global List<FlowRecordRelation> RelatedRecord;
 
     global Note () 

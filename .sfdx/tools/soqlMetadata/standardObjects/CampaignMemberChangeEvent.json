@@ -1,0 +1,308 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do compromisso de alteração",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de reprodução",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cabeçalho do compromisso de alteração",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da campanha",
+      "name": "CampaignId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Campaign"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID principal",
+      "name": "LeadId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Lead"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do contato",
+      "name": "ContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Status",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Planned",
+          "validFor": null,
+          "value": "Planned"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Received",
+          "validFor": null,
+          "value": "Received"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Responded",
+          "validFor": null,
+          "value": "Responded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sent",
+          "validFor": null,
+          "value": "Sent"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Respondido",
+      "name": "HasResponded",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da primeira resposta",
+      "name": "FirstRespondedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Código ISO da moeda",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "label": "Compromisso de alteração Membro da campanha",
+  "childRelationships": [],
+  "custom": false,
+  "name": "CampaignMemberChangeEvent",
+  "queryable": false
+}

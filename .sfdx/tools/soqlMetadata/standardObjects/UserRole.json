@@ -1,0 +1,440 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do papel",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de papel principal",
+      "name": "ParentRoleId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "UserRole"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Descrição",
+      "name": "RollupDescription",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nível de acesso a oportunidades do proprietário da conta",
+      "name": "OpportunityAccessForAccountOwner",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Particular",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente leitura",
+          "validFor": null,
+          "value": "Read"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Leitura/Gravação",
+          "validFor": null,
+          "value": "Edit"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nível de acesso a casos do proprietário da conta",
+      "name": "CaseAccessForAccountOwner",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Particular",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente leitura",
+          "validFor": null,
+          "value": "Read"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Leitura/Gravação",
+          "validFor": null,
+          "value": "Edit"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nível de acesso ao contato para proprietário da conta",
+      "name": "ContactAccessForAccountOwner",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Particular",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente leitura",
+          "validFor": null,
+          "value": "Read"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Leitura/Gravação",
+          "validFor": null,
+          "value": "Edit"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "ForecastUserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "May Forecast Manager Share",
+      "name": "MayForecastManagerShare",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do desenvolvedor",
+      "name": "DeveloperName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da conta",
+      "name": "PortalAccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de portal",
+      "name": "PortalType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nenhum",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portal de clientes",
+          "validFor": null,
+          "value": "CustomerPortal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portal do parceiro",
+          "validFor": null,
+          "value": "Partner"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "PortalAccountOwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Papel",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "Group",
+      "deprecatedAndHidden": false,
+      "field": "RelatedId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Name",
+      "deprecatedAndHidden": false,
+      "field": "UserRoleId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecentlyViewed",
+      "deprecatedAndHidden": false,
+      "field": "UserRoleId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "User",
+      "deprecatedAndHidden": false,
+      "field": "UserRoleId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Users",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "UserRoleId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserRole",
+      "deprecatedAndHidden": false,
+      "field": "ParentRoleId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "UserRole",
+  "queryable": true
+}

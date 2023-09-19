@@ -1,0 +1,823 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do Origem de dados externa",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Idioma mestre",
+      "name": "Language",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inglês",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alemão",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espanhol",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Francês",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italiano",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonês",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sueco",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coreano",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinês (tradicional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinês (simplificado)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Português (Brasil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Holandês",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dinamarquês",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tailandês",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finlandês",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russo",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espanhol (México)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norueguês",
+          "validFor": null,
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Origem de dados externa",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Prefixo do namespace",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da classe",
+      "name": "Type",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AmazonAthena"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AmazonDynamoDb"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "contentHubItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Datacloud"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Datajourney"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "GraphQl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Identity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "OData"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "OData4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "OData401"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "OpenSearch"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "outgoingemail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "QLIAttribute"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SciApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SelectableEmailAddressView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SfdcOrg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SimpleURL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TrailheadEditWithId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "usermobileconfig"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "usrconnectionstatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Wrapper"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "O URL para se conectar ao sistema externo.",
+      "label": "URL",
+      "name": "Endpoint",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Repositório externo padrão",
+      "name": "Repository",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Objetos externos graváveis",
+      "name": "IsWritable",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Usado para controlar os usuários que estão acessando o servidor externo. Anônimo implica que uma identidade de usuário não é especificada para o acesso do servidor externo. Entidade nomeada usa uma identidade de usuário para todos os usuários a fim de acessar o servidor externo.",
+      "label": "Tipo de identidade",
+      "name": "PrincipalType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anônimo",
+          "validFor": null,
+          "value": "Anonymous"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Por usuário",
+          "validFor": null,
+          "value": "PerUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Principal nomeado",
+          "validFor": null,
+          "value": "NamedUser"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Especifique como a Salesforce deve autenticar no servidor externo. A Autenticação de senha indica que são necessários um nome de usuário e senha para a autenticação. Nenhuma autenticação indica que nenhuma credencial é necessária.",
+      "label": "Protocolo de autenticação",
+      "name": "Protocol",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sem autenticação",
+          "validFor": null,
+          "value": "NoAuthentication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OAuth 2.0",
+          "validFor": null,
+          "value": "Oauth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autenticação de senha",
+          "validFor": null,
+          "value": "Password"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assinatura AWS versão 4",
+          "validFor": null,
+          "value": "AwsSv4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JWT",
+          "validFor": null,
+          "value": "Jwt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Troca de token JWT",
+          "validFor": null,
+          "value": "JwtExchange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Personalizado",
+          "validFor": null,
+          "value": "Custom"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Este serviço da Salesforce ou de terceiros fornece o processo de login e aprova o acesso ao sistema externo.",
+      "label": "ID do provedor de autorização",
+      "name": "AuthProviderId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AuthProvider"
+      ],
+      "relationshipName": "AuthProvider",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do recurso estático",
+      "name": "LargeIconId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "StaticResource"
+      ],
+      "relationshipName": "LargeIcon",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do recurso estático",
+      "name": "SmallIconId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "StaticResource"
+      ],
+      "relationshipName": "SmallIcon",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Configuração personalizada",
+      "name": "CustomConfiguration",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da Credencial Nomeada",
+      "name": "NamedCredentialId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "NamedCredential"
+      ],
+      "relationshipName": "NamedCredential",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Origem de dados externa",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "ExternalDataSourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ExternalDataSourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CustomHttpHeader",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CustomHttpHeaders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ExternalDataSrcDescriptor",
+      "deprecatedAndHidden": false,
+      "field": "ExternalDataSourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ExternalDataSrcDescriptors",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ExternalDataUserAuth",
+      "deprecatedAndHidden": false,
+      "field": "ExternalDataSourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "UserAuths",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Product2",
+      "deprecatedAndHidden": false,
+      "field": "ExternalDataSourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Product2ChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ExternalDataSourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "SetupEntityAccess",
+      "deprecatedAndHidden": false,
+      "field": "SetupEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "SetupEntityAccessItems",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "ExternalDataSource",
+  "queryable": true
+}

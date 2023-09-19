@@ -22,6 +22,10 @@ declare module "@salesforce/schema/PricebookEntry.Product2Id" {
   const Product2Id:any;
   export default Product2Id;
 }
+declare module "@salesforce/schema/PricebookEntry.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/PricebookEntry.UnitPrice" {
   const UnitPrice:number;
   export default UnitPrice;

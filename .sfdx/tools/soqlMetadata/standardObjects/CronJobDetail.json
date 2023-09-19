@@ -1,0 +1,128 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do trabalho",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do trabalho",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo",
+      "name": "JobType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exportação de dados",
+          "validFor": null,
+          "value": "1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Atualização do painel",
+          "validFor": null,
+          "value": "3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Instantâneo de relatório",
+          "validFor": null,
+          "value": "4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fluxo agendado",
+          "validFor": null,
+          "value": "6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apex agendado",
+          "validFor": null,
+          "value": "7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Execução do relatório",
+          "validFor": null,
+          "value": "8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trabalho em lote",
+          "validFor": null,
+          "value": "9"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Notificação de relatório",
+          "validFor": null,
+          "value": "A"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Agendar trabalho",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "CronTrigger",
+      "deprecatedAndHidden": false,
+      "field": "CronJobDetailId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "CronJobDetail",
+  "queryable": true
+}

@@ -1,0 +1,346 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do compromisso de alteração",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de reprodução",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cabeçalho do compromisso de alteração",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome do desenvolvedor",
+      "name": "DeveloperName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Idioma mestre",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inglês",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alemão",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espanhol",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Francês",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italiano",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonês",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sueco",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coreano",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinês (tradicional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinês (simplificado)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Português (Brasil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Holandês",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dinamarquês",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tailandês",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finlandês",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russo",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espanhol (México)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norueguês",
+          "validFor": null,
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome",
+      "name": "MasterLabel",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Descrição",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do Tipo de habilidade",
+      "name": "TypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "SkillType"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    }
+  ],
+  "label": "Compromisso de alteração Habilidade",
+  "childRelationships": [],
+  "custom": false,
+  "name": "SkillChangeEvent",
+  "queryable": false
+}

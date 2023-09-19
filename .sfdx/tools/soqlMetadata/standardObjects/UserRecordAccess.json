@@ -1,0 +1,2728 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do acesso ao registro do usuário",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "UserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do registro",
+      "name": "RecordId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tem acesso de leitura",
+      "name": "HasReadAccess",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tem acesso de edição",
+      "name": "HasEditAccess",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tem acesso de exclusão",
+      "name": "HasDeleteAccess",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tem acesso de transferência",
+      "name": "HasTransferAccess",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tem todos os acessos",
+      "name": "HasAllAccess",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nível máximo de acesso",
+      "name": "MaxAccessLevel",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Particular",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somente leitura",
+          "validFor": null,
+          "value": "Read"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Leitura/Gravação",
+          "validFor": null,
+          "value": "Edit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Excluir",
+          "validFor": null,
+          "value": "Delete"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Leitura/Gravação/Transferência",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário",
+          "validFor": null,
+          "value": "All"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Acesso ao registro do usuário",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIInsightAction",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIInsightFeedback",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIInsightReason",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Account",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AccountCleanInfo",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AlternativePaymentMethod",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Announcement",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppAnalyticsQueryRequest",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppUsageAssignment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppointmentCategory",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppointmentInvitation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppointmentInvitee",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppointmentScheduleAggr",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppointmentScheduleLog",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AppointmentTopicTimeSlot",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Asset",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssetAction",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssetActionSource",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssetRelationship",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssetStatePeriod",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssignedResource",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssociatedLocation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AsyncOperationLog",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationForm",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormConsent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormDataUse",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormText",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BackgroundOperation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BriefcaseAssignment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BusinessBrand",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CalendarView",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Campaign",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CardPaymentMethod",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartCheckoutSession",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartDeliveryGroup",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartItemPriceAdjustment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartTax",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartValidationOutput",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Case",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CaseRelatedIssue",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ChangeRequest",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ChangeRequestRelatedIssue",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ChangeRequestRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CollaborationGroupRecord",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CommSubscription",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CommSubscriptionChannelType",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CommSubscriptionConsent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CommSubscriptionTiming",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ConferenceNumber",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ConsumptionRate",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ConsumptionSchedule",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Contact",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactCleanInfo",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointAddress",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointConsent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointEmail",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointPhone",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointTypeConsent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactRequest",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentFolder",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Contract",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContractLineItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Coupon",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CreditMemo",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CreditMemoInvApplication",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CreditMemoLine",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Customer",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DandBCompany",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DataAssessmentFieldMetric",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DataAssessmentMetric",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DataAssessmentValueMetric",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DataUseLegalBasis",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DataUsePurpose",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DatacloudOwnedEntity",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DatacloudPurchaseUsage",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DigitalWallet",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Discovery__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DuplicateRecordItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DuplicateRecordSet",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementChannelType",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementChannelWorkType",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EnhancedLetterhead",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Entitlement",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EntitlementContact",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EntityMilestone",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventRelayFeedback",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ExpressionFilter",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ExpressionFilterCriteria",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ExternalEvent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ExternalEventMapping",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FileSearchActivity",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FinanceBalanceSnapshot",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FinanceTransaction",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowInterview",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowInterviewLog",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowInterviewLogEntry",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationInstance",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationStageInstance",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationStepInstance",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowStageRelation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowTestResult",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Folder",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Funcionario__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Idea",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Image",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Incident",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "IncidentRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "InstalledMobileApp",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Invoice",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "InvoiceLine",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Lead",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "LeadCleanInfo",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "LegalEntity",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListEmail",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListEmailIndividualRecipient",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListEmailRecipientSource",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Locacao__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Localizacao__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Location",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "LocationGroup",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "LocationGroupAssignment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Loja__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MLModel",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MLModelFactor",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MLModelFactorComponent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MLModelMetric",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Macro",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MacroInstruction",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MacroUsage",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ManagedContent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ManagedContentChannel",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ManagedContentSpace",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ManagedContentVariant",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MatchingInformation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingDeliveryError",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingEndUser",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingSession",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OperatingHours",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OperatingHoursHoliday",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Opportunity",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OpportunityLineItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Order",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrderItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrgDeleteRequest",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrgMetric",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrgMetricScanResult",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrgMetricScanSummary",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PartyConsent",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Payment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentAuthAdjustment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentAuthorization",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentGateway",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentGatewayLog",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentGroup",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentLineInvoice",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Pessoa__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Pricebook2",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Problem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProblemIncident",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProblemRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessException",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceNode",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Product2",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductAttribute",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductAttributeSetProduct",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductConsumptionSchedule",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Projeto__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Promotion",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromotionMarketSegment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromotionQualifier",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromotionSegment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromotionSegmentSalesStore",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromotionTarget",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromotionTier",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromptAction",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PromptError",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "QuickText",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "QuickTextUsage",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "QuoteTemplateRichTextData",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Rastreamento_Localizacao__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Rastreamento_Pessoa__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Recommendation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecommendationResponse",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordAction",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Refund",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RefundLinePayment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ResourceAbsence",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ResourcePreference",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrder",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderItemAdjustment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderItemTax",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderLineItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Scorecard",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ScorecardAssociation",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ScorecardMetric",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SearchPromotionRule",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Seller",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointment",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceContract",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceResource",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceResourceSkill",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceSetupProvisioning",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceTerritory",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceTerritoryMember",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceTerritoryWorkType",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SetupAssistantStep",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Shift",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ShiftEngagementChannel",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ShiftWorkTopic",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SkillRequirement",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Solution",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "StreamingChannel",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Sugestao__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TimeSlot",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TodayGoal",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserAppInfo",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserAppMenuCustomization",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserEmailPreferredPerson",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvAccount",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvAccountStaging",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvMockTarget",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvisioningLog",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvisioningRequest",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Veiculo__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallRecording",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Waitlist",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WaitlistParticipant",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WaitlistServiceResource",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WaitlistWorkType",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WaveAutoInstallRequest",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WaveCompatibilityCheckItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCart",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCartAdjustmentBasis",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCartAdjustmentGroup",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrder",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderLineItem",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkPlan",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkPlanTemplate",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkPlanTemplateEntry",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkStep",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkStepTemplate",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkType",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkTypeGroup",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkTypeGroupMember",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "cliente__c",
+      "deprecatedAndHidden": false,
+      "field": "UserRecordAccessId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "UserRecordAccess",
+  "queryable": true
+}

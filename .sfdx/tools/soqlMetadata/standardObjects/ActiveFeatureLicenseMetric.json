@@ -1,0 +1,234 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da Métrica de licença do recurso ativo",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Data da métrica",
+      "name": "MetricsDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary Grain",
+      "name": "FeatureType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Marketing",
+          "validFor": null,
+          "value": "MarketingUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Offline",
+          "validFor": null,
+          "value": "OfflineUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Wireless",
+          "validFor": null,
+          "value": "WirelessUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do AvantGo",
+          "validFor": null,
+          "value": "AvantgoUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário móvel do Apex",
+          "validFor": null,
+          "value": "MobileUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Salesforce CRM Content",
+          "validFor": null,
+          "value": "SFContentUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Knowledge",
+          "validFor": null,
+          "value": "KnowledgeUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Flow",
+          "validFor": null,
+          "value": "InteractionUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Service Cloud",
+          "validFor": null,
+          "value": "SupportUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Data.com",
+          "validFor": null,
+          "value": "JigsawProspectingUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do chat",
+          "validFor": null,
+          "value": "LiveAgentUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário contribuidor do Site.com",
+          "validFor": null,
+          "value": "SiteforceContributorUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário editor do Site.com",
+          "validFor": null,
+          "value": "SiteforcePublisherUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do Chatter Answers",
+          "validFor": null,
+          "value": "ChatterAnswersUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usuário do WDC",
+          "validFor": null,
+          "value": "WorkDotComUserFeature"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contagem de usuários atribuídos",
+      "name": "AssignedUserCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contagem de usuários ativos",
+      "name": "ActiveUserCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contagem total de licenças",
+      "name": "TotalLicenseCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    }
+  ],
+  "label": "Métrica de licença do recurso ativo",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ActiveFeatureLicenseMetric",
+  "queryable": true
+}

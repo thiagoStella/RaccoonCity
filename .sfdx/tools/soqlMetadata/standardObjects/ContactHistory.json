@@ -1,0 +1,896 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do histórico do contato",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do contato",
+      "name": "ContactId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": "Contact",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Campo alterado",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assistente",
+          "validFor": null,
+          "value": "AssistantName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cargo",
+          "validFor": null,
+          "value": "Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Celular",
+          "validFor": null,
+          "value": "MobilePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CEP de correspondência",
+          "validFor": null,
+          "value": "MailingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chave Data.com",
+          "validFor": null,
+          "value": "Jigsaw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cidade de correspondência",
+          "validFor": null,
+          "value": "MailingCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contato mesclado",
+          "validFor": null,
+          "value": "contactMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criado",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criado pela conversão de lead",
+          "validFor": null,
+          "value": "contactCreatedFromLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data da devolução do email",
+          "validFor": null,
+          "value": "EmailBouncedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data de nascimento",
+          "validFor": null,
+          "value": "Birthdate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Departamento",
+          "validFor": null,
+          "value": "Department"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descrição",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço de correspondência",
+          "validFor": null,
+          "value": "MailingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estado/Província de correspondência",
+          "validFor": null,
+          "value": "MailingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evento do feed",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fax",
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identidade de gênero",
+          "validFor": null,
+          "value": "GenderIdentity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indivíduo",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indivíduo mesclado",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Languages",
+          "validFor": null,
+          "value": "Languages__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de correspondência",
+          "validFor": null,
+          "value": "MailingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead convertido em contato",
+          "validFor": null,
+          "value": "contactUpdatedByLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Level",
+          "validFor": null,
+          "value": "Level__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de correspondência",
+          "validFor": null,
+          "value": "MailingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Geocode Accuracy",
+          "validFor": null,
+          "value": "MailingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Moeda do contato",
+          "validFor": null,
+          "value": "CurrencyIsoCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motivo da devolução do email",
+          "validFor": null,
+          "value": "EmailBouncedReason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Não chamar",
+          "validFor": null,
+          "value": "DoNotCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome completo",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nome da conta",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Origem do lead",
+          "validFor": null,
+          "value": "LeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Geocode Accuracy",
+          "validFor": null,
+          "value": "OtherGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outra cidade",
+          "validFor": null,
+          "value": "OtherCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outra latitude",
+          "validFor": null,
+          "value": "OtherLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outra longitude",
+          "validFor": null,
+          "value": "OtherLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outra rua",
+          "validFor": null,
+          "value": "OtherStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outro CEP",
+          "validFor": null,
+          "value": "OtherPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outro endereço",
+          "validFor": null,
+          "value": "OtherAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outro estado/província",
+          "validFor": null,
+          "value": "OtherState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outro país",
+          "validFor": null,
+          "value": "OtherCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outro telefone",
+          "validFor": null,
+          "value": "OtherPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "País de correspondência",
+          "validFor": null,
+          "value": "MailingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primeiro Nome",
+          "validFor": null,
+          "value": "FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pronome",
+          "validFor": null,
+          "value": "Pronouns"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário (Aceito)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário (Atribuição)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proprietário do contato",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recusa de email",
+          "validFor": null,
+          "value": "HasOptedOutOfEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recusa de fax",
+          "validFor": null,
+          "value": "HasOptedOutOfFax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro bloqueado.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Registro desbloqueado.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reporta-se a",
+          "validFor": null,
+          "value": "ReportsTo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rua de correspondência",
+          "validFor": null,
+          "value": "MailingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sobrenome",
+          "validFor": null,
+          "value": "LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status limpo",
+          "validFor": null,
+          "value": "CleanStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone do assistente",
+          "validFor": null,
+          "value": "AssistantPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telefone residencial",
+          "validFor": null,
+          "value": "HomePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tratamento",
+          "validFor": null,
+          "value": "Salutation"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de dados",
+      "name": "DataType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AnyType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AutoNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Base64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "BitVector"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Currency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DataCategoryGroupReference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Division"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Double"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DynamicEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedBase64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EntityId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EnumOrId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ExternalId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "File"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlMultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlStringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "InetAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Json"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Namespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Percent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Raw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SfdcEncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SimpleNamespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "StringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Switchable_PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TimeOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Url"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "YearQuarter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor antigo",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Novo valor",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Histórico do contato",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContactHistory",
+  "queryable": true
+}

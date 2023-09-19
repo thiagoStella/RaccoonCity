@@ -1,0 +1,646 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da política de agendamento de compromissos",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Excluído",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do desenvolvedor",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Idioma mestre",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inglês",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Alemão",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espanhol",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Francês",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italiano",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonês",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sueco",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coreano",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinês (tradicional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinês (simplificado)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Português (Brasil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Holandês",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dinamarquês",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tailandês",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finlandês",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russo",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espanhol (México)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norueguês",
+          "validFor": null,
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Padrão",
+      "name": "IsOrgDefault",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ignorar recursos em serviço excluídos",
+      "name": "ShouldEnforceExcludedResource",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Incluir apenas recursos em serviço obrigatórios",
+      "name": "ShouldEnforceRequiredResource",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Incluir serviços membros de território primários",
+      "name": "ShouldUsePrimaryMembers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Incluir serviços membros de território secundários",
+      "name": "ShouldUseSecondaryMembers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Corresponder habilidades",
+      "name": "ShouldMatchSkill",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Corresponder níveis de habilidade",
+      "name": "ShouldMatchSkillLevel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Aplicar horas de visita à conta",
+      "name": "ShouldRespectVisitingHours",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Intervalo de tempo do início da consulta",
+      "name": "AppointmentStartTimeInterval",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "5",
+          "validFor": null,
+          "value": "5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "10",
+          "validFor": null,
+          "value": "10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "15",
+          "validFor": null,
+          "value": "15"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "20",
+          "validFor": null,
+          "value": "20"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "30",
+          "validFor": null,
+          "value": "30"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "45",
+          "validFor": null,
+          "value": "45"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "60",
+          "validFor": null,
+          "value": "60"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "90",
+          "validFor": null,
+          "value": "90"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "120",
+          "validFor": null,
+          "value": "120"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "150",
+          "validFor": null,
+          "value": "150"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "180",
+          "validFor": null,
+          "value": "180"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "240",
+          "validFor": null,
+          "value": "240"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "300",
+          "validFor": null,
+          "value": "300"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "360",
+          "validFor": null,
+          "value": "360"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "420",
+          "validFor": null,
+          "value": "420"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "480",
+          "validFor": null,
+          "value": "480"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Verificar o calendário do Salesforce quanto à disponibilidade do recurso",
+      "name": "ShouldConsiderCalendarEvents",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da classe",
+      "name": "ExtCalEventHandlerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApexClass"
+      ],
+      "relationshipName": "ExtCalEventHandler",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Use turnos dos serviços membro de território, em vez do horário de funcionamento, para determinar os períodos disponíveis. Se essa caixa de seleção for marcada, o horário de funcionamento do membro não será considerado, mesmo que esteja definido.",
+      "label": "Turno do serviço membro de território",
+      "name": "IsSvcTerritoryMemberShiftUsed",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Use o horário de funcionamento do território de serviço junto com o turno do serviço membro de território para determinar os períodos disponíveis. Por exemplo, se o horário de funcionamento do território de serviço for das 11h às 18h, os períodos de compromisso serão exibidos das 11h às 17h.",
+      "label": "Usar o horário de funcionamento do território de serviço com turnos",
+      "name": "IsSvcTerrOpHoursWithShiftsUsed",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "label": "Política de agendamento de compromissos",
+  "childRelationships": [],
+  "custom": false,
+  "name": "AppointmentSchedulingPolicy",
+  "queryable": true
+}

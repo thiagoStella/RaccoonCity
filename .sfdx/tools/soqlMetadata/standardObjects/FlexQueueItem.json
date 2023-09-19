@@ -1,0 +1,160 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de item de fila flexível",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de item de fila flexível",
+      "name": "FlexQueueItemId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de trabalho",
+      "name": "JobType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Futuro",
+          "validFor": null,
+          "value": "Future"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recálculo do compartilhamento",
+          "validFor": null,
+          "value": "SharingRecalculation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apex agendado",
+          "validFor": null,
+          "value": "ScheduledApex"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apex em lote",
+          "validFor": null,
+          "value": "BatchApex"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trabalhador do Apex em lote",
+          "validFor": null,
+          "value": "BatchApexWorker"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Solicitação de teste",
+          "validFor": null,
+          "value": "TestRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trabalhador do teste",
+          "validFor": null,
+          "value": "TestWorker"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chave do Apex",
+          "validFor": null,
+          "value": "ApexToken"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enfileirável",
+          "validFor": null,
+          "value": "Queueable"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do trabalho do Apex",
+      "name": "AsyncApexJobId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "AsyncApexJob"
+      ],
+      "relationshipName": "AsyncApexJob",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Cargo",
+      "name": "JobPosition",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    }
+  ],
+  "label": "Item de fila flexível",
+  "childRelationships": [],
+  "custom": false,
+  "name": "FlexQueueItem",
+  "queryable": true
+}

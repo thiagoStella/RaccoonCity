@@ -158,6 +158,10 @@ declare module "@salesforce/schema/Account.Site" {
   const Site:string;
   export default Site;
 }
+declare module "@salesforce/schema/Account.CurrencyIsoCode" {
+  const CurrencyIsoCode:string;
+  export default CurrencyIsoCode;
+}
 declare module "@salesforce/schema/Account.Owner" {
   const Owner:any;
   export default Owner;
@@ -253,4 +257,44 @@ declare module "@salesforce/schema/Account.DandbCompany" {
 declare module "@salesforce/schema/Account.DandbCompanyId" {
   const DandbCompanyId:any;
   export default DandbCompanyId;
+}
+declare module "@salesforce/schema/Account.OperatingHours" {
+  const OperatingHours:any;
+  export default OperatingHours;
+}
+declare module "@salesforce/schema/Account.OperatingHoursId" {
+  const OperatingHoursId:any;
+  export default OperatingHoursId;
+}
+declare module "@salesforce/schema/Account.CustomerPriority__c" {
+  const CustomerPriority__c:string;
+  export default CustomerPriority__c;
+}
+declare module "@salesforce/schema/Account.SLA__c" {
+  const SLA__c:string;
+  export default SLA__c;
+}
+declare module "@salesforce/schema/Account.Active__c" {
+  const Active__c:string;
+  export default Active__c;
+}
+declare module "@salesforce/schema/Account.NumberofLocations__c" {
+  const NumberofLocations__c:number;
+  export default NumberofLocations__c;
+}
+declare module "@salesforce/schema/Account.UpsellOpportunity__c" {
+  const UpsellOpportunity__c:string;
+  export default UpsellOpportunity__c;
+}
+declare module "@salesforce/schema/Account.SLASerialNumber__c" {
+  const SLASerialNumber__c:string;
+  export default SLASerialNumber__c;
+}
+declare module "@salesforce/schema/Account.SLAExpirationDate__c" {
+  const SLAExpirationDate__c:any;
+  export default SLAExpirationDate__c;
+}
+declare module "@salesforce/schema/Account.CPF__c" {
+  const CPF__c:string;
+  export default CPF__c;
 }

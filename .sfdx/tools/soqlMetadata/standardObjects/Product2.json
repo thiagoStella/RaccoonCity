@@ -8,7 +8,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Product ID",
+      "label": "ID do produto",
       "name": "Id",
       "nillable": false,
       "picklistValues": [],
@@ -25,7 +25,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Product Name",
+      "label": "Nome do produto",
       "name": "Name",
       "nillable": false,
       "picklistValues": [],
@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Product Code",
+      "label": "Código do produto",
       "name": "ProductCode",
       "nillable": true,
       "picklistValues": [],
@@ -59,7 +59,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Product Description",
+      "label": "Descrição do produto",
       "name": "Description",
       "nillable": true,
       "picklistValues": [],
@@ -76,7 +76,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Active",
+      "label": "Ativo",
       "name": "IsActive",
       "nillable": false,
       "picklistValues": [],
@@ -93,7 +93,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Created Date",
+      "label": "Data de criação",
       "name": "CreatedDate",
       "nillable": false,
       "picklistValues": [],
@@ -110,7 +110,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Created By ID",
+      "label": "Criado pelo ID",
       "name": "CreatedById",
       "nillable": false,
       "picklistValues": [],
@@ -129,7 +129,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Modified Date",
+      "label": "Data da última modificação",
       "name": "LastModifiedDate",
       "nillable": false,
       "picklistValues": [],
@@ -146,7 +146,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Last Modified By ID",
+      "label": "Última modificação pelo ID",
       "name": "LastModifiedById",
       "nillable": false,
       "picklistValues": [],
@@ -165,7 +165,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "System Modstamp",
+      "label": "Modstamp do sistema",
       "name": "SystemModstamp",
       "nillable": false,
       "picklistValues": [],
@@ -182,7 +182,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Product Family",
+      "label": "Família de produtos",
       "name": "Family",
       "nillable": true,
       "picklistValues": [
@@ -202,12 +202,51 @@
     {
       "aggregatable": true,
       "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Código ISO da moeda",
+      "name": "CurrencyIsoCode",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
       "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "External Data Source ID",
+      "label": "ID do Origem de dados externa",
       "name": "ExternalDataSourceId",
       "nillable": true,
       "picklistValues": [],
@@ -226,7 +265,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "External ID",
+      "label": "ID externo",
       "name": "ExternalId",
       "nillable": true,
       "picklistValues": [],
@@ -243,7 +282,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Display URL",
+      "label": "URL de exibição",
       "name": "DisplayUrl",
       "nillable": true,
       "picklistValues": [],
@@ -260,7 +299,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Quantity Unit Of Measure",
+      "label": "Unidade de medida da quantidade",
       "name": "QuantityUnitOfMeasure",
       "nillable": true,
       "picklistValues": [
@@ -285,7 +324,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Deleted",
+      "label": "Excluído",
       "name": "IsDeleted",
       "nillable": false,
       "picklistValues": [],
@@ -302,7 +341,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Archived",
+      "label": "Arquivado",
       "name": "IsArchived",
       "nillable": false,
       "picklistValues": [],
@@ -319,7 +358,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Viewed Date",
+      "label": "Data da última visualização",
       "name": "LastViewedDate",
       "nillable": true,
       "picklistValues": [],
@@ -336,7 +375,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Referenced Date",
+      "label": "Última data citada",
       "name": "LastReferencedDate",
       "nillable": true,
       "picklistValues": [],
@@ -353,7 +392,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Product SKU",
+      "label": "SKU do produto",
       "name": "StockKeepingUnit",
       "nillable": true,
       "picklistValues": [],
@@ -361,10 +400,122 @@
       "relationshipName": null,
       "sortable": true,
       "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de produto",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base",
+          "validFor": null,
+          "value": "Base"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pacote",
+          "validFor": null,
+          "value": "Bundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definir",
+          "validFor": null,
+          "value": "Set"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Simple",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Classe do produto",
+      "name": "ProductClass",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Simples",
+          "validFor": null,
+          "value": "Simple"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pai da variação",
+          "validFor": null,
+          "value": "VariationParent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Variação",
+          "validFor": null,
+          "value": "Variation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pacote",
+          "validFor": null,
+          "value": "Bundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Definir",
+          "validFor": null,
+          "value": "Set"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     }
   ],
-  "label": "Product",
+  "label": "Produto",
   "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
     {
       "cascadeDelete": true,
       "childSObject": "ActivityHistory",
@@ -416,6 +567,26 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "CartItem",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartItemChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "CombinedAttachment",
       "deprecatedAndHidden": false,
@@ -437,6 +608,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ContentVersion",
       "deprecatedAndHidden": false,
       "field": "FirstPublishLocationId",
@@ -447,12 +628,52 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContractLineItem",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContractLineItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CreditMemoLine",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CreditMemoLines",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "EmailMessage",
       "deprecatedAndHidden": false,
       "field": "RelatedToId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Emails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -517,6 +738,26 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "FlowRecordRelation",
       "deprecatedAndHidden": false,
       "field": "RelatedRecordId",
@@ -524,6 +765,16 @@
       "junctionReferenceTo": [],
       "relationshipName": null,
       "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "InvoiceLine",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "InvoiceLines",
+      "restrictedDelete": true
     },
     {
       "cascadeDelete": true,
@@ -577,6 +828,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "OrderItemChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "OutgoingEmail",
       "deprecatedAndHidden": false,
       "field": "RelatedToId",
@@ -594,6 +855,16 @@
       "junctionReferenceTo": [],
       "relationshipName": "PricebookEntries",
       "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PricebookEntryChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
     },
     {
       "cascadeDelete": true,
@@ -637,12 +908,92 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "ProductAttribute",
+      "deprecatedAndHidden": false,
+      "field": "ProductId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProductAttributes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductAttribute",
+      "deprecatedAndHidden": false,
+      "field": "VariantParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProductVariantAttributes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductAttributeChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ProductId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductAttributeChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "VariantParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProductAttributeSetProduct",
+      "deprecatedAndHidden": false,
+      "field": "ProductId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProductAttributeSetProducts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "ProductConsumptionSchedule",
       "deprecatedAndHidden": false,
       "field": "ProductId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ProductConsumptionSchedules",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProductEntitlementTemplate",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "PromotionQualifier",
+      "deprecatedAndHidden": false,
+      "field": "QualifierId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "PromotionTarget",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -667,6 +1018,26 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "ReturnOrderLineItem",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ReturnOrderLineItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderLineItemChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Task",
       "deprecatedAndHidden": false,
       "field": "WhatId",
@@ -680,6 +1051,26 @@
       "childSObject": "TaskChangeEvent",
       "deprecatedAndHidden": false,
       "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderLineItem",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrderLineItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderLineItemChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,

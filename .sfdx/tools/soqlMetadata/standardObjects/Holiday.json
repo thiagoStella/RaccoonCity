@@ -1,0 +1,552 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do feriado",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome do feriado",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Descrição",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "O dia inteiro",
+      "name": "IsAllDay",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Data do feriado",
+      "name": "ActivityDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Hora inicial em minutos a partir de meia-noite",
+      "name": "StartTimeInMinutes",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Hora final em minutos a partir de meia-noite",
+      "name": "EndTimeInMinutes",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modstamp do sistema",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Feriado recorrente",
+      "name": "IsRecurrence",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Início da repetição",
+      "name": "RecurrenceStartDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Término da repetição",
+      "name": "RecurrenceEndDateOnly",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de repetição",
+      "name": "RecurrenceType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repete diariamente",
+          "validFor": null,
+          "value": "RecursDaily"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repete todo dia da semana",
+          "validFor": null,
+          "value": "RecursEveryWeekday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repete mensalmente",
+          "validFor": null,
+          "value": "RecursMonthly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recorre mensalmente Nº",
+          "validFor": null,
+          "value": "RecursMonthlyNth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repete semanalmente",
+          "validFor": null,
+          "value": "RecursWeekly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repete anualmente",
+          "validFor": null,
+          "value": "RecursYearly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repete anualmente Nº",
+          "validFor": null,
+          "value": "RecursYearlyNth"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Intervalo para repetição",
+      "name": "RecurrenceInterval",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Máscara do dia da semana para repetição",
+      "name": "RecurrenceDayOfWeekMask",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Dia do mês para repetição",
+      "name": "RecurrenceDayOfMonth",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Instância para repetição",
+      "name": "RecurrenceInstance",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "1o",
+          "validFor": null,
+          "value": "First"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "2o",
+          "validFor": null,
+          "value": "Second"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "3o",
+          "validFor": null,
+          "value": "Third"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "4o",
+          "validFor": null,
+          "value": "Fourth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "os últimos",
+          "validFor": null,
+          "value": "Last"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mês do ano para repetição",
+      "name": "RecurrenceMonthOfYear",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "janeiro",
+          "validFor": null,
+          "value": "January"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "fevereiro",
+          "validFor": null,
+          "value": "February"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "março",
+          "validFor": null,
+          "value": "March"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "abril",
+          "validFor": null,
+          "value": "April"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "maio",
+          "validFor": null,
+          "value": "May"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "junho",
+          "validFor": null,
+          "value": "June"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "julho",
+          "validFor": null,
+          "value": "July"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "agosto",
+          "validFor": null,
+          "value": "August"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "setembro",
+          "validFor": null,
+          "value": "September"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "outubro",
+          "validFor": null,
+          "value": "October"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "novembro",
+          "validFor": null,
+          "value": "November"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "dezembro",
+          "validFor": null,
+          "value": "December"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Feriado",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "OperatingHoursHoliday",
+      "deprecatedAndHidden": false,
+      "field": "HolidayId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "OperatingHoursHolidays",
+      "restrictedDelete": true
+    }
+  ],
+  "custom": false,
+  "name": "Holiday",
+  "queryable": true
+}

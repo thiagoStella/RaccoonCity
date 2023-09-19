@@ -32,9 +32,12 @@ global class Report {
     global List<ContentDocumentLink> ContentDocumentLinks;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<ReportFeed> Feeds;
+    global List<ScorecardMetric> ScorecardMetrics;
+    global List<ContentDocumentLinkChangeEvent> LinkedEntity;
     global List<ContentVersion> FirstPublishLocation;
     global List<DashboardComponent> CustomReport;
     global List<FeedComment> Parent;
+    global List<FlowExecutionErrorEvent> ContextRecord;
     global List<FlowRecordRelation> RelatedRecord;
     global List<ReportEvent> Report;
 

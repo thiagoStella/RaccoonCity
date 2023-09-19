@@ -1,0 +1,897 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID não usado",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID da ação da plataforma",
+      "name": "ExternalId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Rótulo",
+      "name": "Label",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo",
+      "name": "Type",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação rápida",
+          "validFor": null,
+          "value": "QuickAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Botão padrão",
+          "validFor": null,
+          "value": "StandardButton"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Botão personalizado",
+          "validFor": null,
+          "value": "CustomButton"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de produtividade (Destaque)",
+          "validFor": null,
+          "value": "ProductivityAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ActionLink",
+          "validFor": null,
+          "value": "ActionLink"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação invocável",
+          "validFor": null,
+          "value": "InvocableAction"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Subtipo",
+      "name": "Subtype",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nome da API",
+      "name": "ApiName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Destino da ação",
+      "name": "ActionTarget",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de destino da ação",
+      "name": "ActionTargetType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O destino é para descrever a ação",
+          "validFor": null,
+          "value": "Describe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O destino é para invocar a ação",
+          "validFor": null,
+          "value": "Invoke"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O destino é para uma página do Visualforce",
+          "validFor": null,
+          "value": "Visualforce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O destino é para um componente do Lightning",
+          "validFor": null,
+          "value": "LightningComponent"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mensagem de confirmação",
+      "name": "ConfirmationMessage",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do grupo",
+      "name": "GroupId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "É um grupo padrão",
+      "name": "IsGroupDefault",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Categoria",
+      "name": "Category",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação principal",
+          "validFor": null,
+          "value": "Primary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ação de sobrefluxo",
+          "validFor": null,
+          "value": "Overflow"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Status da invocação",
+      "name": "InvocationStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nova",
+          "validFor": null,
+          "value": "New"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pendente",
+          "validFor": null,
+          "value": "Pending"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bem-sucedida",
+          "validFor": null,
+          "value": "Successful"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Falha",
+          "validFor": null,
+          "value": "Failed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do usuário",
+      "name": "InvokedByUserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "InvokedByUser",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Entidade de origem",
+      "name": "SourceEntity",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contexto de lista de ação",
+      "name": "ActionListContext",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cabeçalho para um modo de exibição de lista",
+          "validFor": null,
+          "value": "ListView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cabeçalho para uma lista relacionada",
+          "validFor": null,
+          "value": "RelatedList"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modo de exibição para um registro de modo de exibição de lista",
+          "validFor": null,
+          "value": "ListViewRecord"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modo de exibição para um registro de lista relacionada",
+          "validFor": null,
+          "value": "RelatedListRecord"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página de exibição para um registro",
+          "validFor": null,
+          "value": "Record"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Um elemento no feed",
+          "validFor": null,
+          "value": "FeedElement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição específica do Chatter",
+          "validFor": null,
+          "value": "Chatter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Página de exibição para global",
+          "validFor": null,
+          "value": "Global"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modo de exibição para Página do Lightning",
+          "validFor": null,
+          "value": "Flexipage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cabeçalho para uma lista de MRU",
+          "validFor": null,
+          "value": "MruList"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modo de exibição para um registro de lista de MRU",
+          "validFor": null,
+          "value": "MruRow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Editar página para um registro",
+          "validFor": null,
+          "value": "RecordEdit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Visualização para um componente de detalhes da foto de uma entidade",
+          "validFor": null,
+          "value": "Photo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição para um componente de detalhes da foto do banner de uma entidade",
+          "validFor": null,
+          "value": "BannerPhoto"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Visualização para gráficos da página de início do objeto",
+          "validFor": null,
+          "value": "ObjectHomeChart"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição para uma definição de exibição de lista",
+          "validFor": null,
+          "value": "ListViewDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição para ações em dock",
+          "validFor": null,
+          "value": "Dockable"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição para pesquisa",
+          "validFor": null,
+          "value": "Lookup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibição para assistente",
+          "validFor": null,
+          "value": "Assistant"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "Phone",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Formato do dispositivo",
+      "name": "DeviceFormat",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Telefone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tablet",
+          "validFor": null,
+          "value": "Tablet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desktop",
+          "validFor": null,
+          "value": "Desktop"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aloha",
+          "validFor": null,
+          "value": "Aloha"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Modo de recuperação",
+      "name": "RetrievalMode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recupera todas as ações suportadas",
+          "validFor": null,
+          "value": "All"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recupera todas as ações suportadas para o layout de página associado",
+          "validFor": null,
+          "value": "PageLayout"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de conteúdo do ícone",
+      "name": "IconContentType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Altura do ícone",
+      "name": "IconHeight",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Largura do ícone",
+      "name": "IconWidth",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "URL do ícone",
+      "name": "IconUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "A ação é em massa",
+      "name": "IsMassAction",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Cor principal",
+      "name": "PrimaryColor",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Entidade de origem relacionada",
+      "name": "RelatedSourceEntity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Seção",
+      "name": "Section",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ações das páginas",
+          "validFor": null,
+          "value": "Page"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ações do compositor de atividade",
+          "validFor": null,
+          "value": "ActivityComposer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ações do compositor de colaboração",
+          "validFor": null,
+          "value": "CollaborateComposer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Links de ação única",
+          "validFor": null,
+          "value": "SingleActionLinks"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de registro de lista relacionada",
+      "name": "RelatedListRecordId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "URL de destino",
+      "name": "TargetUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Objeto de destino",
+      "name": "TargetObject",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tipo de abertura",
+      "name": "OpenType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibir em nova janela",
+          "validFor": null,
+          "value": "newWindow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibir na janela existente com barra lateral",
+          "validFor": null,
+          "value": "sidebar"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibir na janela existente sem barra lateral",
+          "validFor": null,
+          "value": "noSidebar"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exibir na janela existente sem barra lateral nem cabeçalho",
+          "validFor": null,
+          "value": "replace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Executar JavaScript",
+          "validFor": null,
+          "value": "onClickJavaScript"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Ação da plataforma",
+  "childRelationships": [],
+  "custom": false,
+  "name": "PlatformAction",
+  "queryable": true
+}

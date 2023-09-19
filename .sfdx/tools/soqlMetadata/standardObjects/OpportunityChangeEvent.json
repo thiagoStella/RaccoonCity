@@ -1,0 +1,932 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do compromisso de alteração",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de reprodução",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cabeçalho do compromisso de alteração",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da conta",
+      "name": "AccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Particular",
+      "name": "IsPrivate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Descrição",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fase",
+      "name": "StageName",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prospecting",
+          "validFor": null,
+          "value": "Prospecting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qualification",
+          "validFor": null,
+          "value": "Qualification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Needs Analysis",
+          "validFor": null,
+          "value": "Needs Analysis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Value Proposition",
+          "validFor": null,
+          "value": "Value Proposition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Id. Decision Makers",
+          "validFor": null,
+          "value": "Id. Decision Makers"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Perception Analysis",
+          "validFor": null,
+          "value": "Perception Analysis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal/Price Quote",
+          "validFor": null,
+          "value": "Proposal/Price Quote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Negotiation/Review",
+          "validFor": null,
+          "value": "Negotiation/Review"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed Won",
+          "validFor": null,
+          "value": "Closed Won"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed Lost",
+          "validFor": null,
+          "value": "Closed Lost"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor",
+      "name": "Amount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Probabilidade (%)",
+      "name": "Probability",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "percent"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valor esperado",
+      "name": "ExpectedRevenue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Quantidade",
+      "name": "TotalOpportunityQuantity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de fechamento",
+      "name": "CloseDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tipo de oportunidade",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Existing Customer - Upgrade",
+          "validFor": null,
+          "value": "Existing Customer - Upgrade"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Existing Customer - Replacement",
+          "validFor": null,
+          "value": "Existing Customer - Replacement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Existing Customer - Downgrade",
+          "validFor": null,
+          "value": "Existing Customer - Downgrade"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Customer",
+          "validFor": null,
+          "value": "New Customer"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Próxima etapa",
+      "name": "NextStep",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Origem do lead",
+      "name": "LeadSource",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Web",
+          "validFor": null,
+          "value": "Web"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone Inquiry",
+          "validFor": null,
+          "value": "Phone Inquiry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partner Referral",
+          "validFor": null,
+          "value": "Partner Referral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchased List",
+          "validFor": null,
+          "value": "Purchased List"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fechado",
+      "name": "IsClosed",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ganhos",
+      "name": "IsWon",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Categoria de previsão",
+      "name": "ForecastCategory",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omitido",
+          "validFor": null,
+          "value": "Omitted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pipeline",
+          "validFor": null,
+          "value": "Pipeline"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Valor de referência",
+          "validFor": null,
+          "value": "BestCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mais provável",
+          "validFor": null,
+          "value": "MostLikely"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Confirmação",
+          "validFor": null,
+          "value": "Forecast"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fechado",
+          "validFor": null,
+          "value": "Closed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Categoria de previsão",
+      "name": "ForecastCategoryName",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omitted",
+          "validFor": null,
+          "value": "Omitted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pipeline",
+          "validFor": null,
+          "value": "Pipeline"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Best Case",
+          "validFor": null,
+          "value": "Best Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commit",
+          "validFor": null,
+          "value": "Commit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": null,
+          "value": "Closed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Moeda da oportunidade",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da campanha",
+      "name": "CampaignId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Campaign"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tem item",
+      "name": "HasOpportunityLineItem",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do catálogo de preços",
+      "name": "Pricebook2Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Pricebook2"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do proprietário",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última mudança de fase",
+      "name": "LastStageChangeDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do contato",
+      "name": "ContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do histórico de oportunidades",
+      "name": "LastAmountChangedHistoryId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "OpportunityHistory"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do histórico de oportunidades",
+      "name": "LastCloseDateChangedHistoryId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "OpportunityHistory"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Delivery/Installation Status",
+      "name": "DeliveryInstallationStatus__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In progress",
+          "validFor": null,
+          "value": "In progress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yet to begin",
+          "validFor": null,
+          "value": "Yet to begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Completed",
+          "validFor": null,
+          "value": "Completed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tracking Number",
+      "name": "TrackingNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Order Number",
+      "name": "OrderNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Current Generator(s)",
+      "name": "CurrentGenerators__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Main Competitor(s)",
+      "name": "MainCompetitors__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    }
+  ],
+  "label": "Compromisso de alteração Oportunidade",
+  "childRelationships": [],
+  "custom": false,
+  "name": "OpportunityChangeEvent",
+  "queryable": false
+}

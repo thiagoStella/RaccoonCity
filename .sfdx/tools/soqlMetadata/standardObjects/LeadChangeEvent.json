@@ -1,0 +1,1502 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do compromisso de alteração",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de reprodução",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cabeçalho do compromisso de alteração",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Sobrenome",
+      "name": "LastName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Primeiro Nome",
+      "name": "FirstName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tratamento",
+      "name": "Salutation",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mr.",
+          "validFor": null,
+          "value": "Mr."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ms.",
+          "validFor": null,
+          "value": "Ms."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mrs.",
+          "validFor": null,
+          "value": "Mrs."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dr.",
+          "validFor": null,
+          "value": "Dr."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prof.",
+          "validFor": null,
+          "value": "Prof."
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nome completo",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Título",
+      "name": "Title",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Empresa",
+      "name": "Company",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Rua",
+      "name": "Street",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Cidade",
+      "name": "City",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Estado/Província",
+      "name": "State",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CEP",
+      "name": "PostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "País",
+      "name": "Country",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Latitude",
+      "name": "Latitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Longitude",
+      "name": "Longitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Precisão do geocódigo",
+      "name": "GeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endereço",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NearAddress",
+          "validFor": null,
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bloqueio",
+          "validFor": null,
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rua",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ExtendedZip",
+          "validFor": null,
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cep",
+          "validFor": null,
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vizinhança",
+          "validFor": null,
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cidade",
+          "validFor": null,
+          "value": "City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Municipalidade",
+          "validFor": null,
+          "value": "County"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estado",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Desconhecido",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Endereço",
+      "name": "Address",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Telefone",
+      "name": "Phone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Celular",
+      "name": "MobilePhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fax",
+      "name": "Fax",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Email",
+      "name": "Email",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "email"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Site da Web",
+      "name": "Website",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Descrição",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Origem do lead",
+      "name": "LeadSource",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Web",
+          "validFor": null,
+          "value": "Web"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone Inquiry",
+          "validFor": null,
+          "value": "Phone Inquiry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partner Referral",
+          "validFor": null,
+          "value": "Partner Referral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchased List",
+          "validFor": null,
+          "value": "Purchased List"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "Open - Not Contacted",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Status",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Open - Not Contacted",
+          "validFor": null,
+          "value": "Open - Not Contacted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Working - Contacted",
+          "validFor": null,
+          "value": "Working - Contacted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed - Converted",
+          "validFor": null,
+          "value": "Closed - Converted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed - Not Converted",
+          "validFor": null,
+          "value": "Closed - Not Converted"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Setor",
+      "name": "Industry",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agriculture",
+          "validFor": null,
+          "value": "Agriculture"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apparel",
+          "validFor": null,
+          "value": "Apparel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Banking",
+          "validFor": null,
+          "value": "Banking"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Biotechnology",
+          "validFor": null,
+          "value": "Biotechnology"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chemicals",
+          "validFor": null,
+          "value": "Chemicals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communications",
+          "validFor": null,
+          "value": "Communications"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Construction",
+          "validFor": null,
+          "value": "Construction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Consulting",
+          "validFor": null,
+          "value": "Consulting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Education",
+          "validFor": null,
+          "value": "Education"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Electronics",
+          "validFor": null,
+          "value": "Electronics"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Energy",
+          "validFor": null,
+          "value": "Energy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engineering",
+          "validFor": null,
+          "value": "Engineering"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entertainment",
+          "validFor": null,
+          "value": "Entertainment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Environmental",
+          "validFor": null,
+          "value": "Environmental"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finance",
+          "validFor": null,
+          "value": "Finance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Food & Beverage",
+          "validFor": null,
+          "value": "Food & Beverage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Government",
+          "validFor": null,
+          "value": "Government"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Healthcare",
+          "validFor": null,
+          "value": "Healthcare"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hospitality",
+          "validFor": null,
+          "value": "Hospitality"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insurance",
+          "validFor": null,
+          "value": "Insurance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Machinery",
+          "validFor": null,
+          "value": "Machinery"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manufacturing",
+          "validFor": null,
+          "value": "Manufacturing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Media",
+          "validFor": null,
+          "value": "Media"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Not For Profit",
+          "validFor": null,
+          "value": "Not For Profit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recreation",
+          "validFor": null,
+          "value": "Recreation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Retail",
+          "validFor": null,
+          "value": "Retail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipping",
+          "validFor": null,
+          "value": "Shipping"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Technology",
+          "validFor": null,
+          "value": "Technology"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telecommunications",
+          "validFor": null,
+          "value": "Telecommunications"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transportation",
+          "validFor": null,
+          "value": "Transportation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilities",
+          "validFor": null,
+          "value": "Utilities"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Classificação",
+      "name": "Rating",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hot",
+          "validFor": null,
+          "value": "Hot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Warm",
+          "validFor": null,
+          "value": "Warm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cold",
+          "validFor": null,
+          "value": "Cold"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Moeda do lead",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Receita anual",
+      "name": "AnnualRevenue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Funcionários",
+      "name": "NumberOfEmployees",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do proprietário",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Convertido",
+      "name": "IsConverted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da conversão",
+      "name": "ConvertedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da conta convertido",
+      "name": "ConvertedAccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do contato convertido",
+      "name": "ConvertedContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da oportunidade convertido",
+      "name": "ConvertedOpportunityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Opportunity"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Não lido pelo proprietário",
+      "name": "IsUnreadByOwner",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data de criação",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Criado pelo ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da última modificação",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Última modificação pelo ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Chave Data.com",
+      "name": "Jigsaw",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Jigsaw Contact ID",
+      "name": "JigsawContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Status limpo",
+      "name": "CleanStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Em sincronia",
+          "validFor": null,
+          "value": "Matched"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Diferente",
+          "validFor": null,
+          "value": "Different"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Revisado",
+          "validFor": null,
+          "value": "Acknowledged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Não encontrado",
+          "validFor": null,
+          "value": "NotFound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inativo",
+          "validFor": null,
+          "value": "Inactive"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Não comparado",
+          "validFor": null,
+          "value": "Pending"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Selecionar correspondência",
+          "validFor": null,
+          "value": "SelectMatch"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ignorado",
+          "validFor": null,
+          "value": "Skipped"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Número D-U-N-S da empresa",
+      "name": "CompanyDunsNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID da D&B Company",
+      "name": "DandbCompanyId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "DandBCompany"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Motivo da devolução do email",
+      "name": "EmailBouncedReason",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Data da devolução do email",
+      "name": "EmailBouncedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID do Indivíduo",
+      "name": "IndividualId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Individual"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "SIC Code",
+      "name": "SICCode__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Product Interest",
+      "name": "ProductInterest__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1000 series",
+          "validFor": null,
+          "value": "GC1000 series"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5000 series",
+          "validFor": null,
+          "value": "GC5000 series"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3000 series",
+          "validFor": null,
+          "value": "GC3000 series"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Primary",
+      "name": "Primary__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Current Generator(s)",
+      "name": "CurrentGenerators__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Locations",
+      "name": "NumberofLocations__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    }
+  ],
+  "label": "Compromisso de alteração Lead",
+  "childRelationships": [],
+  "custom": false,
+  "name": "LeadChangeEvent",
+  "queryable": false
+}

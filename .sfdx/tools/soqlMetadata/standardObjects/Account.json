@@ -8,7 +8,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account ID",
+      "label": "ID da conta",
       "name": "Id",
       "nillable": false,
       "picklistValues": [],
@@ -25,7 +25,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Deleted",
+      "label": "Excluído",
       "name": "IsDeleted",
       "nillable": false,
       "picklistValues": [],
@@ -42,7 +42,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Master Record ID",
+      "label": "ID do registro mestre",
       "name": "MasterRecordId",
       "nillable": true,
       "picklistValues": [],
@@ -61,7 +61,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Name",
+      "label": "Nome da conta",
       "name": "Name",
       "nillable": false,
       "picklistValues": [],
@@ -78,7 +78,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Type",
+      "label": "Tipo de conta",
       "name": "Type",
       "nillable": true,
       "picklistValues": [
@@ -145,7 +145,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Parent Account ID",
+      "label": "ID da conta pai",
       "name": "ParentId",
       "nillable": true,
       "picklistValues": [],
@@ -164,7 +164,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Billing Street",
+      "label": "Rua de cobrança",
       "name": "BillingStreet",
       "nillable": true,
       "picklistValues": [],
@@ -181,7 +181,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Billing City",
+      "label": "Cidade de cobrança",
       "name": "BillingCity",
       "nillable": true,
       "picklistValues": [],
@@ -198,7 +198,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Billing State/Province",
+      "label": "Estado/Província de cobrança",
       "name": "BillingState",
       "nillable": true,
       "picklistValues": [],
@@ -215,7 +215,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Billing Zip/Postal Code",
+      "label": "CEP de cobrança",
       "name": "BillingPostalCode",
       "nillable": true,
       "picklistValues": [],
@@ -232,7 +232,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Billing Country",
+      "label": "País de cobrança",
       "name": "BillingCountry",
       "nillable": true,
       "picklistValues": [],
@@ -249,7 +249,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Billing Latitude",
+      "label": "Latitude da cobrança",
       "name": "BillingLatitude",
       "nillable": true,
       "picklistValues": [],
@@ -266,7 +266,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Billing Longitude",
+      "label": "Longitude da cobrança",
       "name": "BillingLongitude",
       "nillable": true,
       "picklistValues": [],
@@ -290,7 +290,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Address",
+          "label": "Endereço",
           "validFor": null,
           "value": "Address"
         },
@@ -304,14 +304,14 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Block",
+          "label": "Bloqueio",
           "validFor": null,
           "value": "Block"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Street",
+          "label": "Rua",
           "validFor": null,
           "value": "Street"
         },
@@ -325,42 +325,42 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Zip",
+          "label": "Cep",
           "validFor": null,
           "value": "Zip"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Neighborhood",
+          "label": "Vizinhança",
           "validFor": null,
           "value": "Neighborhood"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "City",
+          "label": "Cidade",
           "validFor": null,
           "value": "City"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "County",
+          "label": "Municipalidade",
           "validFor": null,
           "value": "County"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "State",
+          "label": "Estado",
           "validFor": null,
           "value": "State"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Unknown",
+          "label": "Desconhecido",
           "validFor": null,
           "value": "Unknown"
         }
@@ -378,7 +378,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Billing Address",
+      "label": "Endereço de cobrança",
       "name": "BillingAddress",
       "nillable": true,
       "picklistValues": [],
@@ -395,7 +395,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Shipping Street",
+      "label": "Rua de entrega",
       "name": "ShippingStreet",
       "nillable": true,
       "picklistValues": [],
@@ -412,7 +412,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Shipping City",
+      "label": "Cidade de entrega",
       "name": "ShippingCity",
       "nillable": true,
       "picklistValues": [],
@@ -429,7 +429,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Shipping State/Province",
+      "label": "Estado/Província de entrega",
       "name": "ShippingState",
       "nillable": true,
       "picklistValues": [],
@@ -446,7 +446,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Shipping Zip/Postal Code",
+      "label": "CEP de entrega",
       "name": "ShippingPostalCode",
       "nillable": true,
       "picklistValues": [],
@@ -463,7 +463,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Shipping Country",
+      "label": "País de entrega",
       "name": "ShippingCountry",
       "nillable": true,
       "picklistValues": [],
@@ -480,7 +480,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Shipping Latitude",
+      "label": "Latitude de envio",
       "name": "ShippingLatitude",
       "nillable": true,
       "picklistValues": [],
@@ -497,7 +497,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Shipping Longitude",
+      "label": "Longitude de envio",
       "name": "ShippingLongitude",
       "nillable": true,
       "picklistValues": [],
@@ -521,7 +521,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Address",
+          "label": "Endereço",
           "validFor": null,
           "value": "Address"
         },
@@ -535,14 +535,14 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Block",
+          "label": "Bloqueio",
           "validFor": null,
           "value": "Block"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Street",
+          "label": "Rua",
           "validFor": null,
           "value": "Street"
         },
@@ -556,42 +556,42 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Zip",
+          "label": "Cep",
           "validFor": null,
           "value": "Zip"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Neighborhood",
+          "label": "Vizinhança",
           "validFor": null,
           "value": "Neighborhood"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "City",
+          "label": "Cidade",
           "validFor": null,
           "value": "City"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "County",
+          "label": "Municipalidade",
           "validFor": null,
           "value": "County"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "State",
+          "label": "Estado",
           "validFor": null,
           "value": "State"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Unknown",
+          "label": "Desconhecido",
           "validFor": null,
           "value": "Unknown"
         }
@@ -609,7 +609,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Shipping Address",
+      "label": "Endereço de entrega",
       "name": "ShippingAddress",
       "nillable": true,
       "picklistValues": [],
@@ -626,7 +626,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Phone",
+      "label": "Telefone da conta",
       "name": "Phone",
       "nillable": true,
       "picklistValues": [],
@@ -643,7 +643,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Fax",
+      "label": "Fax da conta",
       "name": "Fax",
       "nillable": true,
       "picklistValues": [],
@@ -660,7 +660,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Number",
+      "label": "Número da conta",
       "name": "AccountNumber",
       "nillable": true,
       "picklistValues": [],
@@ -677,7 +677,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Website",
+      "label": "Site da Web",
       "name": "Website",
       "nillable": true,
       "picklistValues": [],
@@ -694,7 +694,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Photo URL",
+      "label": "URL da foto",
       "name": "PhotoUrl",
       "nillable": true,
       "picklistValues": [],
@@ -711,7 +711,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "SIC Code",
+      "label": "Código SIC",
       "name": "Sic",
       "nillable": true,
       "picklistValues": [],
@@ -728,7 +728,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Industry",
+      "label": "Setor",
       "name": "Industry",
       "nillable": true,
       "picklistValues": [
@@ -970,7 +970,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Annual Revenue",
+      "label": "Receita anual",
       "name": "AnnualRevenue",
       "nillable": true,
       "picklistValues": [],
@@ -987,7 +987,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Employees",
+      "label": "Funcionários",
       "name": "NumberOfEmployees",
       "nillable": true,
       "picklistValues": [],
@@ -1004,7 +1004,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Ownership",
+      "label": "Propriedade",
       "name": "Ownership",
       "nillable": true,
       "picklistValues": [
@@ -1050,7 +1050,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Ticker Symbol",
+      "label": "Símbolo do marcador",
       "name": "TickerSymbol",
       "nillable": true,
       "picklistValues": [],
@@ -1067,7 +1067,7 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Account Description",
+      "label": "Descrição da conta",
       "name": "Description",
       "nillable": true,
       "picklistValues": [],
@@ -1084,7 +1084,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Rating",
+      "label": "Classificação da conta",
       "name": "Rating",
       "nillable": true,
       "picklistValues": [
@@ -1123,7 +1123,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Site",
+      "label": "Local da conta",
       "name": "Site",
       "nillable": true,
       "picklistValues": [],
@@ -1135,12 +1135,51 @@
     {
       "aggregatable": true,
       "custom": false,
+      "defaultValue": "BRL",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Moeda da conta",
+      "name": "CurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dólar Canadense",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Peso Argentino",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Real brasileiro",
+          "validFor": null,
+          "value": "BRL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
       "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Owner ID",
+      "label": "ID do proprietário",
       "name": "OwnerId",
       "nillable": false,
       "picklistValues": [],
@@ -1159,7 +1198,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Created Date",
+      "label": "Data de criação",
       "name": "CreatedDate",
       "nillable": false,
       "picklistValues": [],
@@ -1176,7 +1215,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Created By ID",
+      "label": "Criado pelo ID",
       "name": "CreatedById",
       "nillable": false,
       "picklistValues": [],
@@ -1195,7 +1234,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Modified Date",
+      "label": "Data da última modificação",
       "name": "LastModifiedDate",
       "nillable": false,
       "picklistValues": [],
@@ -1212,7 +1251,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Last Modified By ID",
+      "label": "Última modificação pelo ID",
       "name": "LastModifiedById",
       "nillable": false,
       "picklistValues": [],
@@ -1231,7 +1270,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "System Modstamp",
+      "label": "Modstamp do sistema",
       "name": "SystemModstamp",
       "nillable": false,
       "picklistValues": [],
@@ -1248,7 +1287,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Last Activity",
+      "label": "Última atividade",
       "name": "LastActivityDate",
       "nillable": true,
       "picklistValues": [],
@@ -1265,7 +1304,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Viewed Date",
+      "label": "Data da última visualização",
       "name": "LastViewedDate",
       "nillable": true,
       "picklistValues": [],
@@ -1282,7 +1321,7 @@
       "filterable": true,
       "groupable": false,
       "inlineHelpText": null,
-      "label": "Last Referenced Date",
+      "label": "Última data citada",
       "name": "LastReferencedDate",
       "nillable": true,
       "picklistValues": [],
@@ -1299,7 +1338,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Data.com Key",
+      "label": "Chave Data.com",
       "name": "Jigsaw",
       "nillable": true,
       "picklistValues": [],
@@ -1333,63 +1372,63 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Clean Status",
+      "label": "Status limpo",
       "name": "CleanStatus",
       "nillable": true,
       "picklistValues": [
         {
           "active": true,
           "defaultValue": false,
-          "label": "In Sync",
+          "label": "Em sincronia",
           "validFor": null,
           "value": "Matched"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Different",
+          "label": "Diferente",
           "validFor": null,
           "value": "Different"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Reviewed",
+          "label": "Revisado",
           "validFor": null,
           "value": "Acknowledged"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Not Found",
+          "label": "Não encontrado",
           "validFor": null,
           "value": "NotFound"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Inactive",
+          "label": "Inativo",
           "validFor": null,
           "value": "Inactive"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Not Compared",
+          "label": "Não comparado",
           "validFor": null,
           "value": "Pending"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Select Match",
+          "label": "Selecionar correspondência",
           "validFor": null,
           "value": "SelectMatch"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Skipped",
+          "label": "Ignorado",
           "validFor": null,
           "value": "Skipped"
         }
@@ -1407,7 +1446,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Account Source",
+      "label": "Origem da conta",
       "name": "AccountSource",
       "nillable": true,
       "picklistValues": [
@@ -1460,7 +1499,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "D-U-N-S Number",
+      "label": "Número D-U-N-S",
       "name": "DunsNumber",
       "nillable": true,
       "picklistValues": [],
@@ -1494,7 +1533,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "NAICS Code",
+      "label": "Código NAICS",
       "name": "NaicsCode",
       "nillable": true,
       "picklistValues": [],
@@ -1511,7 +1550,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "NAICS Description",
+      "label": "Descrição NAICS",
       "name": "NaicsDesc",
       "nillable": true,
       "picklistValues": [],
@@ -1528,7 +1567,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "Year Started",
+      "label": "Ano de início",
       "name": "YearStarted",
       "nillable": true,
       "picklistValues": [],
@@ -1545,7 +1584,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "SIC Description",
+      "label": "Descrição SIC",
       "name": "SicDesc",
       "nillable": true,
       "picklistValues": [],
@@ -1562,7 +1601,7 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
-      "label": "D&B Company ID",
+      "label": "ID da D&B Company",
       "name": "DandbCompanyId",
       "nillable": true,
       "picklistValues": [],
@@ -1572,10 +1611,273 @@
       "relationshipName": "DandbCompany",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID do horário de funcionamento",
+      "name": "OperatingHoursId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "OperatingHours"
+      ],
+      "relationshipName": "OperatingHours",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Customer Priority",
+      "name": "CustomerPriority__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "High",
+          "validFor": null,
+          "value": "High"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Low",
+          "validFor": null,
+          "value": "Low"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Medium",
+          "validFor": null,
+          "value": "Medium"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA",
+      "name": "SLA__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gold",
+          "validFor": null,
+          "value": "Gold"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Silver",
+          "validFor": null,
+          "value": "Silver"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Platinum",
+          "validFor": null,
+          "value": "Platinum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bronze",
+          "validFor": null,
+          "value": "Bronze"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active",
+      "name": "Active__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Locations",
+      "name": "NumberofLocations__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Upsell Opportunity",
+      "name": "UpsellOpportunity__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maybe",
+          "validFor": null,
+          "value": "Maybe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA Serial Number",
+      "name": "SLASerialNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA Expiration Date",
+      "name": "SLAExpirationDate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "CPF",
+      "name": "CPF__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
-  "label": "Account",
+  "label": "Conta",
   "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
     {
       "cascadeDelete": false,
       "childSObject": "Account",
@@ -1687,6 +1989,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "AlternativePaymentMethod",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AlternativePaymentMethods",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Asset",
       "deprecatedAndHidden": false,
@@ -1748,6 +2060,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "AssociatedLocation",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AssociatedLocations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "AttachedContentDocument",
       "deprecatedAndHidden": false,
       "field": "LinkedEntityId",
@@ -1768,12 +2090,62 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "AuthorizationFormConsent",
+      "deprecatedAndHidden": false,
+      "field": "ConsentGiverId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AuthorizationFormConsents",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormConsent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RelatedAuthorizationFormConsents",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormConsentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ConsentGiverId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormConsentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "CampaignMember",
       "deprecatedAndHidden": false,
       "field": "LeadOrContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CardPaymentMethod",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CardPaymentMethods",
       "restrictedDelete": false
     },
     {
@@ -1817,6 +2189,26 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "CommSubscriptionConsent",
+      "deprecatedAndHidden": false,
+      "field": "ConsentGiverId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CommSubscriptionConsents",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CommSubscriptionConsentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ConsentGiverId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Contact",
       "deprecatedAndHidden": false,
@@ -1838,12 +2230,42 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "ContactPointAddress",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContactPointAddresses",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointAddressChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "ContactPointEmail",
       "deprecatedAndHidden": false,
       "field": "ParentId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ContactPointEmails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointEmailChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -1854,6 +2276,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ContactPointPhones",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactPointPhoneChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -1888,7 +2320,27 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
       "deprecatedAndHidden": false,
       "field": "FirstPublishLocationId",
       "junctionIdListNames": [],
@@ -1918,6 +2370,26 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "CreditMemo",
+      "deprecatedAndHidden": false,
+      "field": "BillingAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CreditMemos",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DigitalWallet",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "DigitalWallets",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "DuplicateRecordItem",
       "deprecatedAndHidden": false,
       "field": "RecordId",
@@ -1934,6 +2406,36 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Emails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Entitlement",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Entitlements",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EntitlementChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -2018,12 +2520,82 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "FinanceBalanceSnapshot",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FinanceBalanceSnapshots",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FinanceBalanceSnapshotChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FinanceTransaction",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FinanceTransactions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FinanceTransactionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "FlowRecordRelation",
       "deprecatedAndHidden": false,
       "field": "RelatedRecordId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Invoice",
+      "deprecatedAndHidden": false,
+      "field": "BillingAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Invoices",
       "restrictedDelete": false
     },
     {
@@ -2044,6 +2616,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingEndUser",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "MessagingEndUsers",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingSession",
+      "deprecatedAndHidden": false,
+      "field": "EndUserAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "MessagingSessions",
       "restrictedDelete": false
     },
     {
@@ -2157,6 +2749,76 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "Payment",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Payments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentAuthAdjustment",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PaymentAuthAdjustments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentAuthorization",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PaymentAuthorizations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentLineInvoice",
+      "deprecatedAndHidden": false,
+      "field": "AssociatedAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PaymentLinesInvoice",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PaymentMethod",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PendingOrderSummary",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PendingOrderSummaries",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PendingOrderSummaryChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ProcessInstance",
       "deprecatedAndHidden": false,
@@ -2194,6 +2856,156 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "RecordActionHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Refund",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Refunds",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RefundLinePayment",
+      "deprecatedAndHidden": false,
+      "field": "AssociatedAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RefundLinePayments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ResourcePreference",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ResourcePreferences",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ResourcePreferenceChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrder",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ReturnOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ScorecardAssociation",
+      "deprecatedAndHidden": false,
+      "field": "TargetEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ScorecardAssociations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointment",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ServiceAppointmentAccount",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ServiceAppointment",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ServiceAppointments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointmentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointmentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceContract",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ServiceContracts",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceContractChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceResource",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ServiceResources",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceResourceChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -2271,6 +3083,76 @@
       "childSObject": "UserRole",
       "deprecatedAndHidden": false,
       "field": "PortalAccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RelatedRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "WaitlistParticipant",
+      "deprecatedAndHidden": false,
+      "field": "ParticipantId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WaitlistParticipants",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCart",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Carts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCartChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrder",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
